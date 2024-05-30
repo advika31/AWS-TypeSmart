@@ -1,0 +1,13 @@
+:root {
+    --bgColor: rgb(253, 246, 227);
+    --textColor: #D91C81;
+    --black: #3A3335;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+    font-family: "Poppins", sans-serif;
+    color: var(--textColor);
+}
