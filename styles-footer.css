@@ -1,0 +1,69 @@
+:root {
+    --bgColor: rgb(253, 246, 227);
+    --textColor: #D91C81;
+    --fadedTextColor: #8f255d;
+    --black: #3A3335;
+}
+
+.footer-container {
+    margin: 1rem 5rem;
+    -webkit-user-select: none;
+    user-select: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 5rem;
+    bottom: 0;
+}
+.footer-container-left {
+    text-align: left;
+    display: flex;
+    justify-items: start;
+    width: fit-content;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.footer-container-right {
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    width: max-content;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-item {
+    flex: 1;
+}
+.footer-icons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.25rem;
+    align-items: baseline;
+    width: max-content;
+    text-decoration: none;
+}
+.footer-icons {
+    color: var(--textColor);
+    transition: 0.1s;
+}
+.footer-icons:hover{
+    color: var(--fadedTextColor);
+}
+.footer-content {
+    display: inline;
+    color: var(--black);
+}
+@media screen and (max-width: 768px) {
+    .footer-container{
+        margin: 1rem 2rem;
+        font-size: small;
+    }
+}
+
+.fa.fa-twitter{
+	font-family:sans-serif;
+}
+.fa.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
+}
