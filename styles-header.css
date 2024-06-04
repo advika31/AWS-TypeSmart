@@ -45,7 +45,7 @@
   
   .icon-header:hover {
     transform: scale(1.5);  
-    fill: #007bff;  
+    fill: var(--textColor);  
   }
   
   
