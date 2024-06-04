@@ -1,9 +1,4 @@
-:root {
-    --bgColor: rgb(253, 246, 227);
-    --textColor: #d91c81;
-    --black: #3A3335;
-    --incorrect: rgb(40, 207, 34);
-}
+@import url('variables.css');
 
 .header {
     display: flex;

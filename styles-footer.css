@@ -1,9 +1,4 @@
-:root {
-    --bgColor: rgb(253, 246, 227);
-    --textColor: #D91C81;
-    --hover: #8f255d;
-    --black: #3A3335;
-}
+@import url('variables.css');
 
 .footer-container {
     margin: 1rem 5rem;
@@ -51,6 +46,7 @@
 }
 .footer-icons:hover{
     color: var(--hover);
+    font-weight: 600;
 }
 .footer-content {
     display: inline;
