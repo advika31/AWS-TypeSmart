@@ -11,12 +11,16 @@ body {
     background-color: var(--bgColor);
     font-family: "Poppins", sans-serif;
     color: var(--textColor);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main{
     width: 80%;
     margin: 50px auto;
     font-size: 1.4rem;
+    height: 100%;
 }
 
 #header{
@@ -106,8 +110,8 @@ div.word{
     height: 1.6rem;
     background: var(--black);
     position: fixed;
-    top: 119px;
-    left: 58px;
+    top: 253px;
+    left: 61px;
     animation: blink .3s infinite;
 }
 

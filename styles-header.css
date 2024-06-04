@@ -1,6 +1,6 @@
 :root {
     --bgColor: rgb(253, 246, 227);
-    --textColor: #D91C81;
+    --textColor: #d91c81;
     --black: #3A3335;
     --incorrect: rgb(40, 207, 34);
 }
@@ -9,9 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;  
+    padding: 30px 70px;  
     background-color: var(--bgColor);
-    border-bottom: 1px solid #e0e0e0;
   }
   
   .logo-and-title {
@@ -28,12 +27,12 @@
   .site-title {
     font-size: 35px; 
     font-weight: bold;
-    color: #333;
+    color: var(--black);
   }
   
   .header-icons {
     display: flex;
-    gap: 30px; 
+    gap: 30px;     
   }
   
   .icon-header {
