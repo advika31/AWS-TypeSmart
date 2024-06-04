@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;  
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .logo-and-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-logo {
+    width: 60px;  
+    height: 60px; 
+    margin-right: 20px;  
+  }
+  
+  .site-title {
+    font-size: 35px; 
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 30px; 
+  }
+  
+  .icon-header {
+    width: 40px;  
+    height: 40px;  
+    cursor: pointer;
+    transition: filter 0.3s;
+  }
+  
+  .icon-header:hover {
+    transform: scale(1.5);  
+    fill: #007bff;  
+  }
+  
+  
+  .header * {
+    box-sizing: border-box;
+  }
+  
