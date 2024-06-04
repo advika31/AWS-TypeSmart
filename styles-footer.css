@@ -9,6 +9,10 @@ body {
 	height: 100vh;
 }
 
+#footer {
+	bottom: 0px;
+}
+
 .footer-container {
     margin: 1rem 5rem;
     -webkit-user-select: none;
@@ -16,7 +20,6 @@ body {
     display: grid;
     grid-template-columns: 1fr max-content;
     gap: 5rem;
-    bottom: 0;
 }
 
 .footer-container-left {
