@@ -31,14 +31,12 @@
   .header-icons {
     display: flex;
     gap: 30px;   
-    
   }
   
   .icon-header {
-    width: 40px;  
-    height: 40px;  
-    cursor: pointer;
-    transition: filter 0.3s;
+    font-size: 1.5rem;
+    /* cursor: pointer;
+    transition: filter 0.3s; */
   }
   
   .icon-header:hover {
@@ -95,4 +93,9 @@
   font-size: 16px;
   color: #666;
   line-height: 1.6;
+}
+
+.header-icons i,
+.logo-and-title i  {
+  font-size: 1.5rem;
 }
