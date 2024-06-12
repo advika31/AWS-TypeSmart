@@ -6,301 +6,338 @@ body {
     background-color: var(--bgColor);
     font-family: "Poppins", sans-serif;
     color: var(--textColor);
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
 
-main{
-    width: 80%;
-    margin: 50px auto;
-    font-size: 1.4rem;
-    height: 100%;
-}
-
-#header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px 6px 30px;
-}
-
-#buttons{
-    text-align: right;
-}
-
-#info{
-    color: var(--textColor);
-}
-
-button{
+::selection{
+    color: var(--black);
     background: var(--bgColor);
-    border: 1px solid var(--black);
-    color: var(--textColor);
-    padding: 5px 20px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
-    font-size: 1rem;
-    color: var(--black);
-    border: 1px solid var(--textColor);
-    font-weight: 600;
+.wrapper{
+    /* width: 770px; */
+    padding: 35px;
+    /* background: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 10px 15px var(--black)
+  }
+
+.wrapper .input-field{
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
 }
 
-div#game{
-    line-height: 35px;
-    height: 105px;
-    overflow: hidden;
-    position: relative;
+.wrapper .content-box{
+  padding: 13px 20px 0;
+  border-radius: 10px;
+  border: 1px solid var(--black);
 }
 
-div#game:focus{
-    outline:0;
+.content-box .typing-text{
+  overflow: hidden;
+  max-height: 20rem;
 }
 
-#words{
-    filter: blur(5px);
-    color: var(--textColor);
+.typing-text::-webkit-scrollbar{
+  width: 0;
 }
 
-#game:focus #words{
-    filter: blur(0);
+.typing-text p{
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+  /* word-break: break-all; */
 }
 
-#focus-error {
-    color: var(--black);
-    position: absolute;
-    inset: 0;
-    text-align: center;
-    padding-top: 35px;
+.typing-text p span{
+  position: relative;
 }
 
-#game:focus #focus-error{
-    display:none;
-} 
-
-div.word{ 
-    /* from formatWord() in js file */
-    /* each word a div */
-    display: inline-block;
-    margin: 0 5px;
+.typing-text p span.correct{
+  color: var(--correct);
 }
 
-.letter.correct{
-    color: var(--black);
+.typing-text p span.incorrect{
+  color: var(--incorrectA );
+  outline: 1px solid var(--black);
+  background: var(--wrong-highlighted);
+  border-radius: 4px;
 }
-.letter.incorrect{
-    color: var(--incorrect);
+
+.typing-text p span.active{
+  color: var(--neon);
+}
+
+.typing-text p span.active::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  background: var(--neon);
+  animation: blink 1s ease-in-out infinite;
 }
 
 @keyframes blink{
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+  50%{ 
+    opacity: 1; 
+  }
+}
+
+.content-box .content{
+  margin-top: 17px;
+  display: flex;
+  padding: 12px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--white);
+}
+
+.content button{
+  outline: none;
+  border: 1px solid var(--textColor);
+  width: 80vw;
+  color: var(--textColor);
+  padding: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.content button:active{
+  transform: scale(0.97);
+}
+
+.content .result-details{
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.result-details li{
+  display: flex;
+  height: 20px;
+  list-style: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-details li:not(:first-child){
+  padding-left: 22px;
+  border-left: 1px solid var(--black);
+}
+
+.result-details li p{
+  font-size: 19px;
+}
+
+.result-details li span{
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+li span b{
+  font-weight: 800;
+}
+
+li:not(:first-child) span{
+  font-weight: 800;
+}
+
+@media (max-width: 795px) {
+  .wrapper{
+    padding: 20px;
+  }
+  .content-box .content{
+    padding: 20px 0;
+  }
+  .content-box .typing-text{
+    max-height: 100%;
+  }
+  .typing-text p{
+    font-size: 19px;
+    text-align: left;
+  }
+  .content button{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+
+  .content .result-details{
+    width: 100%;
+  }
+  .result-details li:not(:first-child){
+    border-left: 0;
+    padding: 0;
+  }
+  .result-details {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--black);
+    justify-content: center;
+    align-items: center;
+  }
+  .result-details li p, 
+  .result-details li span{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 518px) {
+  .wrapper .content-box{
+    padding: 10px 15px 0;
+  }
+  .typing-text p{
+    font-size: 18px;
+  }
+  .result-details li{
+    margin-bottom: 10px;
+  }
+  .content button{
+    margin-top: 10px;
+  }
+}
+
+
+
+  
+main{
+  width: 80%;
+  margin: 50px auto;
+  font-size: 1.4rem;
+  height: 100%;
+}
+
+#header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 6px 30px;
+}
+
+#buttons{
+  text-align: right;
+}
+
+#info{
+  color: var(--textColor);
+}
+
+button{
+  background: var(--bgColor);
+  border: 1px solid var(--black);
+  color: var(--textColor);
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-size: 1rem;
+  color: var(--black);
+  border: 1px solid var(--textColor);
+  font-weight: 600;
+}
+
+div#game{
+  line-height: 35px;
+  height: 105px;
+  overflow: hidden;
+  position: relative;
+}
+
+div#game:focus{
+  outline:0;
+}
+
+#words{
+  filter: blur(5px);
+  color: var(--textColor);
+}
+
+#game:focus #words{
+  filter: blur(0);
+}
+
+#focus-error {
+  color: var(--black);
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  padding-top: 35px;
+}
+
+#game:focus #focus-error{
+  display:none;
+} 
+
+div.word{ 
+  /* from formatWord() in js file */
+  /* each word a div */
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.letter.correct{
+  color: var(--black);
+}
+.letter.incorrect{
+  color: var(--incorrect);
+}
+
+@keyframes blink{
+  0%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
 }
 
 #cursor{
-    display:none;
-    width: 2px;
-    height: 1.6rem;
-    background: var(--black);
-    position: fixed;
-    top: 253px;
-    left: 61px;
-    animation: blink .3s infinite;
+  display:none;
+  width: 2px;
+  height: 1.6rem;
+  background: var(--black);
+  position: fixed;
+  top: 253px;
+  left: 61px;
+  animation: blink .3s infinite;
 }
 
 #game:focus #cursor{
-    display: block;
+  display: block;
 }
 
 #game.over #words{
-    opacity: .5;
-    filter: blur(0px);
+  opacity: .5;
+  filter: blur(0px);
 }
 
 #game.over:focus #cursor{
-    display: none;
+  display: none;
 }
 
 #game.over #focus-error {
-    display: none;
+  display: none;
 }
-
-
-/* new */
-::selection{
-    color: #fff;
-    background: #17A2B8;
-}
-.wrapper{
-    width: 770px;
-    padding: 35px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-  }
-  .wrapper .input-field{
-    opacity: 0;
-    z-index: -999;
-    position: absolute;
-  }
-  .wrapper .content-box{
-    padding: 13px 20px 0;
-    border-radius: 10px;
-    border: 1px solid #bfbfbf;
-  }
-  .content-box .typing-text{
-    overflow: hidden;
-    max-height: 256px;
-  }
-  .typing-text::-webkit-scrollbar{
-    width: 0;
-  }
-  .typing-text p{
-    font-size: 21px;
-    text-align: justify;
-    letter-spacing: 1px;
-    word-break: break-all;
-  }
-  .typing-text p span{
-    position: relative;
-  }
-  .typing-text p span.correct{
-    color: #56964f;
-  }
-  .typing-text p span.incorrect{
-    color: #cb3439;
-    outline: 1px solid #fff;
-    background: #ffc0cb;
-    border-radius: 4px;
-  }
-  .typing-text p span.active{
-    color: #17A2B8;
-  }
-  .typing-text p span.active::before{
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    border-radius: 5px;
-    background: #17A2B8;
-    animation: blink 1s ease-in-out infinite;
-  }
-  @keyframes blink{
-    50%{ 
-      opacity: 1; 
-    }
-  }
-  .content-box .content{
-    margin-top: 17px;
-    display: flex;
-    padding: 12px 0;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #bfbfbf;
-  }
-  .content button{
-    outline: none;
-    border: none;
-    width: 105px;
-    color: #fff;
-    padding: 8px 0;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: #17A2B8;
-    transition: transform 0.3s ease;
-  }
-  .content button:active{
-    transform: scale(0.97);
-  }
-  .content .result-details{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: calc(100% - 140px);
-    justify-content: space-between;
-  }
-  .result-details li{
-    display: flex;
-    height: 20px;
-    list-style: none;
-    position: relative;
-    align-items: center;
-  }
-  .result-details li:not(:first-child){
-    padding-left: 22px;
-    border-left: 1px solid #bfbfbf;
-  }
-  .result-details li p{
-    font-size: 19px;
-  }
-  .result-details li span{
-    display: block;
-    font-size: 20px;
-    margin-left: 10px;
-  }
-  li span b{
-    font-weight: 500;
-  }
-  li:not(:first-child) span{
-    font-weight: 500;
-  }
-  @media (max-width: 745px) {
-    .wrapper{
-      padding: 20px;
-    }
-    .content-box .content{
-      padding: 20px 0;
-    }
-    .content-box .typing-text{
-      max-height: 100%;
-    }
-    .typing-text p{
-      font-size: 19px;
-      text-align: left;
-    }
-    .content button{
-      width: 100%;
-      font-size: 15px;
-      padding: 10px 0;
-      margin-top: 20px;
-    }
-    .content .result-details{
-      width: 100%;
-    }
-    .result-details li:not(:first-child){
-      border-left: 0;
-      padding: 0;
-    }
-    .result-details li p, 
-    .result-details li span{
-      font-size: 17px;
-    }
-  }
-  @media (max-width: 518px) {
-    .wrapper .content-box{
-      padding: 10px 15px 0;
-    }
-    .typing-text p{
-      font-size: 18px;
-    }
-    .result-details li{
-      margin-bottom: 10px;
-    }
-    .content button{
-      margin-top: 10px;
-    }
-  }
