@@ -61,14 +61,15 @@
 }
 
 .about-section {
+  margin-top: 20px;
   padding: 40px;
   background-color: var(--bgColor);
-  border-top: 1px solid #e0e0e0;
+  /* border-top: 1px solid #e0e0e0; */
 }
 
 .about-section h2 {
   font-size: 32px;
-  color: #333;
+  color: var(--black);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -92,7 +93,7 @@
 
 .aws-services p {
   font-size: 16px;
-  color: #666;
+  color: var(--hover);
   line-height: 1.6;
 }
 
