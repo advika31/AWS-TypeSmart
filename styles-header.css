@@ -6,8 +6,9 @@
     align-items: center;
     padding: 30px 70px;  
     background-color: var(--bgColor);
-    flex-wrap: wrap;  
+    /* flex-wrap: wrap;   */
     text-align: center;  
+    margin: 0px;
   }
   
   .logo-and-title {
@@ -23,8 +24,8 @@
   }
   
   .site-title {
-    font-size: 35px; 
-    font-weight: bold;
+    font-size: 30px; 
+    font-weight: 600;
     color: var(--black);
   }
   

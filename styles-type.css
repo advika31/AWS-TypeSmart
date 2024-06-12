@@ -216,7 +216,18 @@ li:not(:first-child) span{
   }
 }
 
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  margin: 0px;
+  margin-bottom: 1rem;
+}
 
+.language:hover {
+  color: var(--black);
+}
 
   
 main{
