@@ -1,0 +1,98 @@
+@import url('variables.css');
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255 238 197);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff5d7;
+    color: #be0065;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ffe8a4;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #fff5d7;
+}
+
+.contact-container {
+    background-color: #fff5d7;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    max-height: 900px;
+    text-align: center;
+}
+
+h1 {
+    color: #be0065;
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #f5e3c3;
+    padding: 20px;
+    border-radius: 10px;
+    color: #be0065;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #e0d2b8;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button i {
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #e0d2b8;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #d1c4a5;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
