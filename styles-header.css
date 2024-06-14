@@ -6,11 +6,15 @@
     align-items: center;
     padding: 30px 70px;  
     background-color: var(--bgColor);
+    /* flex-wrap: wrap;   */
+    text-align: center;  
+    margin: 0px;
   }
   
   .logo-and-title {
     display: flex;
     align-items: center;
+    flex: 1;
   }
   
   .site-logo {
@@ -20,21 +24,20 @@
   }
   
   .site-title {
-    font-size: 35px; 
-    font-weight: bold;
+    font-size: 30px; 
+    font-weight: 600;
     color: var(--black);
   }
   
   .header-icons {
     display: flex;
-    gap: 30px;     
+    gap: 30px;   
   }
   
   .icon-header {
-    width: 40px;  
-    height: 40px;  
-    cursor: pointer;
-    transition: filter 0.3s;
+    font-size: 1.5rem;
+    /* cursor: pointer;
+    transition: filter 0.3s; */
   }
   
   .icon-header:hover {
@@ -47,3 +50,73 @@
     box-sizing: border-box;
   }
   
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .logo-and-title {
+        margin-bottom: 20px;
+        justify-content: center;  
+    }
+}
+
+
+
+.about-section {
+  margin-top: 20px;
+  padding: 40px;
+  background-color: var(--bgColor);
+  border-top: 1px solid #e0e0e0;
+}
+
+.about-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: var(--textColor);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-section h2{
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.aws-services {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+.aws-services li {
+  margin-bottom: 20px;
+}
+
+.aws-services h3 {
+  font-size: 24px;
+  color: var(--textColor);
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.aws-services p {
+  font-size: 16px;
+  color: var(--hover);
+  line-height: 1.6;
+}
+
+
+.header-icons i,
+.logo-and-title i  {
+  font-size: 1.5rem;
+}

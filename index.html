@@ -14,34 +14,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS TypeSmart</title>
-    <!-- CSS sheets -->
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="styles-header.css">
-    <link rel="stylesheet" href="./styles-type.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
+
+    <!-- CSS sheets -->
+    <link rel="stylesheet" href="variables.css"> 
+    <link rel="stylesheet" href="styles-header.css">
+    <link rel="stylesheet" href="./styles-type.css">
     <link rel="stylesheet" href="styles-footer.css">
 </head>
 <body>
-   <!-- Tanvi Bisht -->
+   <!-- Tanvi Bisht and Samriddhi-->
    <div class="header">
     <div class="logo-and-title">
-        <img src="cloud.svg" alt="TypeSmart Logo" class="site-logo">
+        <div style="padding: 10px;"><i class="fab fa-aws"></i></div>
         <span class="site-title">TypeSmart</span>
     </div>
     <div class="header-icons">
-      <img src="paint-palette.svg" class="icon-header" alt="Icon 1">
-      <img src="i-icon.svg" class="icon-header" alt="Icon 2">
-      <img src="keyboard.svg" class="icon-header" alt="Icon 3">
+      <div class="footer-item">
+        <a class="footer-icons" href="" target="_blank">
+          <i class="fa fa-paint-brush"></i>
+        </a>
+      </div>
+      <div class="footer-item">
+        <a class="footer-icons" href="" target="_blank">
+          <i class="fa fa-info"></i>
+        </a>
+      </div>
+      <div class="footer-item">
+        <a class="footer-icons" href="" target="_blank">
+          <i class="	fa fa-keyboard-o"></i>
+        </a>
+      </div>
+      
+      <!-- <img src="i-icon.svg" class=" alt="Icon 2"> -->
+      <!-- <img src="keyboard.svg" class=" alt="Icon 3"> -->
+      
   </div>
 </div>
-    <!--  (Type started (Riya Ahlawat) -->
+
+    <!--  Type started (Riya Ahlawat and Samriddhi) -->
     <main>
-        <div id="header">
+        <!-- <div id="header">
             <div id="info"></div>
             <div id="buttons">
                 <button id="newGameBtn">New game</button>
@@ -53,9 +72,73 @@
             <div id="focus-error">
                 <span class="material-symbols-outlined">highlight_mouse_cursor</span>
                 Click here to focus.</div>
-        </div>
+        </div> -->
+        <div class = "language"><div style="padding: 10px;"><i class="fa fa-globe"></i></div><p>English</p></div>
+        <div class="wrapper">
+          <input type="text" class="input-field">
+          <div class="content-box">
+            <div class="typing-text">
+              <p></p>
+            </div>
+            <div class="content">
+              <ul class="result-details">
+                <li class="time">
+                  <p>Time Left:</p>
+                  <span><b>60</b>s</span>
+                </li>
+                <li class="mistake">
+                  <p>Mistakes:</p>
+                  <span>0</span>
+                </li>
+                <li class="wpm">
+                  <p>WPM:</p>
+                  <span>0</span>
+                </li>
+                <li class="cpm">
+                  <p>CPM:</p>
+                  <span>0</span>
+                </li>
+              </ul>
+              <button>Try Again</button>
+            </div>
+          </div>
+        </div> 
     </main>
     <!-- Type ended. -->
+
+    <!-- About section -->
+
+    
+  <div class="about-section">
+    <h1>ABOUT US</h1>
+    <p>AWS Cloud Clubs are vibrant communities designed for cloud enthusiasts to come together and share their passion for Amazon Web Services (AWS). These clubs provide a collaborative environment where members can learn about the latest cloud technologies, develop new skills, and work on real-world projects. By participating in AWS Cloud Clubs, individuals can gain hands-on experience with AWS services, attend workshops and seminars, and connect with industry experts and peers. The clubs aim to foster innovation, enhance technical knowledge, and prepare members for cloud-related careers by offering resources, mentorship, and networking opportunities.</p>
+    <h2>AWS Services</h2>
+    <p>AWS Services encompass a wide array of cloud computing products that offer solutions for computing power, storage, and networking, tailored to meet the needs of businesses of all sizes. These services enable companies to scale their operations quickly and efficiently, providing a robust infrastructure without the need for significant upfront investment in hardware. AWS Services include versatile tools like Amazon EC2 for scalable computing power, Amazon S3 for reliable and secure storage, and AWS Lambda for serverless computing. By leveraging AWS Services, businesses can innovate faster, improve their agility, and reduce costs, all while ensuring high performance, security, and compliance. Some of the services are listed below.</p>
+    <ul class="aws-services">
+        <li>
+            <h3>Amazon EC2 🚀</h3>
+            <p>Amazon Elastic Compute Cloud (EC2) provides scalable computing capacity in the AWS cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster.</p>
+        </li>
+        <li>
+            <h3>Amazon S3 💾</h3>
+            <p>Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.</p>
+        </li>
+        <li>
+            <h3>AWS Lambda ⚡</h3>
+            <p>AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.</p>
+        </li>
+        <li>
+            <h3>Amazon RDS 🗄️</h3>
+            <p>Amazon Relational Database Service (RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks.</p>
+        </li>
+        <li>
+            <h3>Amazon DynamoDB 📊</h3>
+            <p>Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It’s a fully managed, multi-region, multi-active, durable database with built-in security, backup and restore, and in-memory caching.</p>
+        </li>
+    </ul>
+</div>
+
+  <!-- About ended -->
     
     <!-- Footer starts(Samriddhi) -->
     <footer id="footer">
@@ -113,7 +196,9 @@
       </footer>
     <!-- Footer ends (Samriddhi) -->
 
-    <script src="typing.js"></script>
+    <!-- <script src="typing.js"></script> -->
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
