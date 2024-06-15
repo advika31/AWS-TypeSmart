@@ -21,12 +21,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="palette.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- CSS sheets -->
     <link rel="stylesheet" href="variables.css"> 
     <link rel="stylesheet" href="styles-header.css">
     <link rel="stylesheet" href="./styles-type.css">
     <link rel="stylesheet" href="styles-footer.css">
+
+    <style>
+      .theme-selector {
+          display: none;
+          position: fixed;
+          top: 50px;
+          right: 20px;
+          width: 400px;
+          z-index: 1000;
+          background-color: #073642;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          padding: 20px;
+      }
+
+      .theme-selector.show {
+          display: block;
+      }
+  </style>
 </head>
 <body>
    <!-- Tanvi Bisht and Samriddhi-->
@@ -37,7 +58,7 @@
     </div>
     <div class="header-icons">
       <div class="footer-item">
-        <a class="footer-icons" href="" target="_blank">
+        <a class="footer-icons" href="javascript:void(0);">
           <i class="fa fa-paint-brush"></i>
         </a>
       </div>
@@ -55,6 +76,92 @@
       <!-- <img src="i-icon.svg" class=" alt="Icon 2"> -->
       <!-- <img src="keyboard.svg" class=" alt="Icon 3"> -->
       
+  </div>
+</div>
+
+<!-- advika -->
+<div class="theme-selector">
+  <div class="container">
+      <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search..." id="search-input">
+      </div>
+      <ul id="theme-list">
+          <li class="theme-item" data-theme-class="theme-bento">
+              <span class="theme-name"><b>bento</b></span>
+              <div class="color-palette">
+                  <span class="color-button" style="background: #2d394d;"></span>
+                  <span class="color-button" style="background: #ff7a90;"></span>
+                  <span class="color-button" style="background: #fffaf8;"></span>
+              </div>
+          </li>
+
+          <li class="theme-item" data-theme-class="theme-blue-dolphin">
+              <span class="theme-name">blue dolphin</span>
+              <div class="color-palette">
+                  <span class="color-button" style="background: #00e4ff;"></span>
+                  <span class="color-button" style="background: #014961;"></span>
+                  <span class="color-button" style="background: #ffcefb;"></span>
+              </div>
+          </li>
+
+          <li class="theme-item" data-theme-class="theme-monokai">
+            <span class="theme-name">monokai</span>
+            <div class="color-palette">
+                <span class="color-button" style="background: #a6e22e;"></span>
+                <span class="color-button" style="background: #e6db74;"></span>
+                <span class="color-button" style="background: #e2e2dc;"></span>
+            </div>
+        </li>
+      
+        <li class="theme-item" data-theme-class="theme-fledling">
+          <span class="theme-name">fledling</span>
+          <div class="color-palette">
+              <span class="color-button" style="background: #fc6e83;"></span>
+              <span class="color-button" style="background: #474747;"></span>
+              <span class="color-button" style="background: #e6d5d3;"></span>
+          </div>
+      </li>
+
+      <li class="theme-item" data-theme-class="theme-lavender">
+          <span class="theme-name">lavender</span>
+          <div class="color-palette">
+              <span class="color-button" style="background: #ada6c2;"></span>
+              <span class="color-button" style="background: #e4e3e9;"></span>
+              <span class="color-button" style="background: #2f2a41;"></span>
+          </div>
+      </li>
+
+      <li class="theme-item" data-theme-class="theme-dark">
+          <span class="theme-name">dark</span>
+          <div class="color-palette">
+              <span class="color-button" style="background: #eee;"></span>
+              <span class="color-button" style="background: #444;"></span>
+              <span class="color-button" style="background: #191919;"></span>
+          </div>
+      </li>
+
+      <li class="theme-item" data-theme-class="theme-bushido">
+          <span class="theme-name">bushido</span>
+          <div class="color-palette">
+              <span class="color-button" style="background: #ec4c56;"></span>
+              <span class="color-button" style="background: #596172;"></span>
+              <span class="color-button" style="background: #f6f0e9;"></span>
+          </div>
+      </li>
+
+      <li class="theme-item" data-theme-class="theme-lime">
+          <span class="theme-name">lime</span>
+          <div class="color-palette">
+              <span class="color-button" style="background: #93c247;"></span>
+              <span class="color-button" style="background: #4b5257;"></span>
+              <span class="color-button" style="background: #bfcfdc;"></span>
+          </div>
+      </li>
+
+
+          <!-- Add other themes similarly -->
+      </ul>
   </div>
 </div>
 
@@ -197,6 +304,40 @@
     <!-- Footer ends (Samriddhi) -->
 
     <!-- <script src="typing.js"></script> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const themeItems = document.querySelectorAll('.theme-item');
+      
+          themeItems.forEach(item => {
+              item.addEventListener('click', function() {
+                  themeItems.forEach(item => item.classList.remove('selected'));
+                  this.classList.add('selected');
+
+                  const themeClass = this.getAttribute('data-theme-class');
+                  document.body.className = themeClass;
+              });
+          });
+      
+          const searchInput = document.getElementById('search-input');
+          if (searchInput) {
+              searchInput.addEventListener('input', function() {
+                  const filter = searchInput.value.toLowerCase();
+                  themeItems.forEach(item => {
+                      const themeName = item.querySelector('.theme-name').textContent.toLowerCase();
+                      if (themeName.includes(filter)) {
+                          item.style.display = '';
+                      } else {
+                          item.style.display = 'none';
+                      }
+                  });
+              });
+          }
+      
+          document.querySelector('.fa-paint-brush').addEventListener('click', function() {
+              document.querySelector('.theme-selector').classList.toggle('show');
+          });
+      });
+    </script>
     <script src="js/paragraphs.js"></script>
     <script src="js/script.js"></script>
 
