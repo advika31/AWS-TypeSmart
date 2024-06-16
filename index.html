@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FVJXEZ1TV"></script>
   <script>
@@ -32,7 +31,6 @@
   <link rel="stylesheet" href="styles-header.css">
   <link rel="stylesheet" href="./styles-type.css">
   <link rel="stylesheet" href="styles-footer.css">
-
 </head>
 
 <body>
@@ -44,7 +42,7 @@
     </div>
     <div class="header-icons">
       <div class="footer-item">
-        <a class="footer-icons" href="javascript:void(0);">
+        <a class="footer-icons" href="" target="_blank">
           <i class="fa fa-paint-brush"></i>
         </a>
       </div>
@@ -65,149 +63,9 @@
     </div>
   </div>
 
-
-<!-- Colour palette by Advika and Pulak -->
-
-<style>
-  .theme-selector {
-      display: none;
-      position: fixed;
-      top: 50px;
-      right: 20px;
-      width: 400px;
-      z-index: 1000;
-      background-color: #073642;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-  }
-
-  .theme-selector.show {
-      display: block;
-  }
-</style>
-
-<div class="theme-selector">
-  <div class="container">
-      <div class="search-bar">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search..." id="search-input">
-      </div>
-      <ul id="theme-list">
-          <li class="theme-item" data-theme-class="theme-bento">
-              <span class="theme-name"><b>bento</b></span>
-              <div class="color-palette">
-                  <span class="color-button" style="background: #2d394d;"></span>
-                  <span class="color-button" style="background: #ff7a90;"></span>
-                  <span class="color-button" style="background: #fffaf8;"></span>
-              </div>
-          </li>
-
-          <li class="theme-item" data-theme-class="theme-blue-dolphin">
-              <span class="theme-name">blue dolphin</span>
-              <div class="color-palette">
-                  <span class="color-button" style="background: #00e4ff;"></span>
-                  <span class="color-button" style="background: #014961;"></span>
-                  <span class="color-button" style="background: #ffcefb;"></span>
-              </div>
-          </li>
-
-          <li class="theme-item" data-theme-class="theme-monokai">
-            <span class="theme-name">monokai</span>
-            <div class="color-palette">
-                <span class="color-button" style="background: #a6e22e;"></span>
-                <span class="color-button" style="background: #e6db74;"></span>
-                <span class="color-button" style="background: #e2e2dc;"></span>
-            </div>
-        </li>
-      
-        <li class="theme-item" data-theme-class="theme-fledling">
-          <span class="theme-name">fledling</span>
-          <div class="color-palette">
-              <span class="color-button" style="background: #fc6e83;"></span>
-              <span class="color-button" style="background: #474747;"></span>
-              <span class="color-button" style="background: #e6d5d3;"></span>
-          </div>
-      </li>
-
-      <li class="theme-item" data-theme-class="theme-lavender">
-          <span class="theme-name">lavender</span>
-          <div class="color-palette">
-              <span class="color-button" style="background: #ada6c2;"></span>
-              <span class="color-button" style="background: #e4e3e9;"></span>
-              <span class="color-button" style="background: #2f2a41;"></span>
-          </div>
-      </li>
-
-      <li class="theme-item" data-theme-class="theme-dark">
-          <span class="theme-name">dark</span>
-          <div class="color-palette">
-              <span class="color-button" style="background: #eee;"></span>
-              <span class="color-button" style="background: #444;"></span>
-              <span class="color-button" style="background: #191919;"></span>
-          </div>
-      </li>
-
-      <li class="theme-item" data-theme-class="theme-bushido">
-          <span class="theme-name">bushido</span>
-          <div class="color-palette">
-              <span class="color-button" style="background: #ec4c56;"></span>
-              <span class="color-button" style="background: #596172;"></span>
-              <span class="color-button" style="background: #f6f0e9;"></span>
-          </div>
-      </li>
-
-      <li class="theme-item" data-theme-class="theme-lime">
-          <span class="theme-name">lime</span>
-          <div class="color-palette">
-              <span class="color-button" style="background: #93c247;"></span>
-              <span class="color-button" style="background: #4b5257;"></span>
-              <span class="color-button" style="background: #bfcfdc;"></span>
-          </div>
-      </li>
-      </ul>
-  </div>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const themeItems = document.querySelectorAll('.theme-item');
-  
-      themeItems.forEach(item => {
-          item.addEventListener('click', function() {
-              themeItems.forEach(item => item.classList.remove('selected'));
-              this.classList.add('selected');
-
-              const themeClass = this.getAttribute('data-theme-class');
-              document.body.className = themeClass;
-          });
-      });
-  
-      const searchInput = document.getElementById('search-input');
-      if (searchInput) {
-          searchInput.addEventListener('input', function() {
-              const filter = searchInput.value.toLowerCase();
-              themeItems.forEach(item => {
-                  const themeName = item.querySelector('.theme-name').textContent.toLowerCase();
-                  if (themeName.includes(filter)) {
-                      item.style.display = '';
-                  } else {
-                      item.style.display = 'none';
-                  }
-              });
-          });
-      }
-  
-      document.querySelector('.fa-paint-brush').addEventListener('click', function() {
-          document.querySelector('.theme-selector').classList.toggle('show');
-      });
-  });
-</script>
-
-    <!--  Type started (Riya Ahlawat and Samriddhi) -->
+  <!--  Type started (Riya Ahlawat and Samriddhi) -->
   <main>
     <!-- <div id="header">
-
             <div id="info"></div>
             <div id="buttons">
                 <button id="newGameBtn">New game</button>
