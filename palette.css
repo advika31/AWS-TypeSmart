@@ -1,0 +1,202 @@
+/* Color palette by Advika and Pulak */
+.theme-selector {
+    display: flex;
+    left: 35%;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: -20px;
+    padding: 10px;
+    background-color: var(--bg-color, #002b36);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color, #eee);
+    
+}
+
+.theme-selector.container {
+    width: 400px;
+    max-width: 100%;
+    background-color: var(--sub-alt-color, #073642);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.theme-selector .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--sub-alt-color, #073642);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.theme-selector .search-bar i {
+    color: var(--text-color,#eee);
+    margin-right: 10px;
+}
+
+.theme-selector .search-bar input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color:  var(--text-color, #eee);
+    font-size: 1rem;
+    outline: none;
+}
+
+.theme-selector #theme-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.theme-selector .theme-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--sub-alt-color, #002b36);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.theme-selector .theme-name {
+    font-size: 1rem;
+    color:  var(--text-color, #eee);
+}
+
+.theme-selector .color-palette {
+    display: flex;
+}
+
+.theme-selector .color-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid var(--sub-alt-color, #073642);
+}
+
+
+/* Color - theme options*/
+
+.theme-bento {
+  --sub-alt-color:#30466d;
+  --bgColor: #2d394d;
+  --textColor: #fffaf8;
+  --black: #ff7a90;
+  --incorrect: #bc42ba;
+  --hover: #4a768d;
+  --correct: #263041;
+  --wrong-highlighted: #fc2032;
+  --neon: #f04040;
+}
+
+.theme-blue-dolphin {
+  --sub-alt-color:#689da3;
+  --bgColor: #003950;
+  --textColor: #82eaff;
+  --black: #ffcefb;
+  --incorrect: #ffbde6;
+  --hover: #00e4ff;
+  --correct: #014961;
+  --wrong-highlighted: #d1a5fd;
+  --neon: #ff8188;
+
+}
+
+.theme-monokai {
+    --sub-alt-color:#717f54;
+    --bgColor: #272822;
+    --black: #a6e22e;
+    --hover: #e6db74;
+    --correct: #1f201b;
+    --textColor: #e2e2dc;
+    --incorrect: #ad637e;
+    --neon: #fd971f;
+    --wrong-highlighted: #f92672;
+  }
+
+.theme-fledling {
+  --bgColor: #3b363f;
+  --black: #fc6e83;
+  --hover: #8e5568;
+  --sub-alt-color: #fc6e83;
+  --textColor: #e6d5d3;
+  --incorrect: #f52443;
+  --neon: #bd001c;
+  --wrong-highlighted: #ff0a2f;
+  --correct: #c5cd54;
+}
+
+.theme-lavender {
+  --sub-alt-color:#a19bb9;
+  --bgColor: #ada6c2;
+  --black: #e4e3e9;
+  --hover: #e4e3e9;
+  --correct: #a19bb9;
+  --textColor: #2f2a41;
+  --incorrect: #ca4754;
+  --neon: #7e2a33;
+  --wrong-highlighted: #ca4754;
+}
+
+nav .textButton {
+  border-radius: 10rem !important;
+  background: var(--text-color);
+  color: var(--main-color);
+}
+
+nav .textButton:hover {
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+
+body.crtmode nav .textButton {
+  box-shadow: 3px 0 1px var(--crt-text-color-glow),
+    -3px 0 var(--crt-text-color-glow), 0 0 3px;
+}
+
+.theme-dark {
+  --bgColor: #111;
+  --black: #eee;
+  --hover: #444;
+  --sub-alt-color: #191919;
+  --correct: #191919;
+  --textColor: #eee;
+  --inncorrect: #da3333;
+  --wrong-highlighted: #da3333;
+  --neon: #791717;
+}
+
+.theme-bushido {
+  --bgColor: #242933;
+  --black: #ec4c56;
+  --hover: #596172;
+  --sub-alt-color: #1c222d;
+  --textColor: #f6f0e9;
+  --incorrect: #ec4c56;
+  --wrong-highlighted: #9b333a;
+  --correct: #ecdc4c;
+  --neon: #bdb03d;
+}
+
+.theme-lime {
+  --bgColor: #7c878e;
+  --black: #93c247;
+  --hover: #4b5257;
+  --sub-alt-color: #737d82;
+  --textColor: #bfcfdc;
+  --incorrect: #ea4221;
+  --wrong-highlighted: #7e2a33;
+  --correct: #ea4221;
+  --neon: #7e2a33;
+}
