@@ -23,31 +23,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="palette.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <!-- CSS sheets -->
     <link rel="stylesheet" href="variables.css"> 
     <link rel="stylesheet" href="styles-header.css">
     <link rel="stylesheet" href="./styles-type.css">
     <link rel="stylesheet" href="styles-footer.css">
 
-    <style>
-      .theme-selector {
-          display: none;
-          position: fixed;
-          top: 50px;
-          right: 20px;
-          width: 400px;
-          z-index: 1000;
-          background-color: #073642;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          padding: 20px;
-      }
-
-      .theme-selector.show {
-          display: block;
-      }
-  </style>
 </head>
 <body>
    <!-- Tanvi Bisht and Samriddhi-->
@@ -79,7 +61,27 @@
   </div>
 </div>
 
-<!-- advika -->
+<!-- Colour palette by Advika and Pulak -->
+
+<style>
+  .theme-selector {
+      display: none;
+      position: fixed;
+      top: 50px;
+      right: 20px;
+      width: 400px;
+      z-index: 1000;
+      background-color: #073642;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+  }
+
+  .theme-selector.show {
+      display: block;
+  }
+</style>
+
 <div class="theme-selector">
   <div class="container">
       <div class="search-bar">
@@ -158,12 +160,44 @@
               <span class="color-button" style="background: #bfcfdc;"></span>
           </div>
       </li>
-
-
-          <!-- Add other themes similarly -->
       </ul>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const themeItems = document.querySelectorAll('.theme-item');
+  
+      themeItems.forEach(item => {
+          item.addEventListener('click', function() {
+              themeItems.forEach(item => item.classList.remove('selected'));
+              this.classList.add('selected');
+
+              const themeClass = this.getAttribute('data-theme-class');
+              document.body.className = themeClass;
+          });
+      });
+  
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) {
+          searchInput.addEventListener('input', function() {
+              const filter = searchInput.value.toLowerCase();
+              themeItems.forEach(item => {
+                  const themeName = item.querySelector('.theme-name').textContent.toLowerCase();
+                  if (themeName.includes(filter)) {
+                      item.style.display = '';
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+      }
+  
+      document.querySelector('.fa-paint-brush').addEventListener('click', function() {
+          document.querySelector('.theme-selector').classList.toggle('show');
+      });
+  });
+</script>
 
     <!--  Type started (Riya Ahlawat and Samriddhi) -->
     <main>
@@ -304,40 +338,6 @@
     <!-- Footer ends (Samriddhi) -->
 
     <!-- <script src="typing.js"></script> -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          const themeItems = document.querySelectorAll('.theme-item');
-      
-          themeItems.forEach(item => {
-              item.addEventListener('click', function() {
-                  themeItems.forEach(item => item.classList.remove('selected'));
-                  this.classList.add('selected');
-
-                  const themeClass = this.getAttribute('data-theme-class');
-                  document.body.className = themeClass;
-              });
-          });
-      
-          const searchInput = document.getElementById('search-input');
-          if (searchInput) {
-              searchInput.addEventListener('input', function() {
-                  const filter = searchInput.value.toLowerCase();
-                  themeItems.forEach(item => {
-                      const themeName = item.querySelector('.theme-name').textContent.toLowerCase();
-                      if (themeName.includes(filter)) {
-                          item.style.display = '';
-                      } else {
-                          item.style.display = 'none';
-                      }
-                  });
-              });
-          }
-      
-          document.querySelector('.fa-paint-brush').addEventListener('click', function() {
-              document.querySelector('.theme-selector').classList.toggle('show');
-          });
-      });
-    </script>
     <script src="js/paragraphs.js"></script>
     <script src="js/script.js"></script>
 
