@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FVJXEZ1TV"></script>
   <script>
@@ -12,10 +12,12 @@
     gtag('config', 'G-4FVJXEZ1TV');
   </script>
 
+  <!-- html boilerplate -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWS TypeSmart</title>
 
+  <!-- Poppins font and svg awesome font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -28,111 +30,17 @@
 
   <!-- CSS sheets -->
   <link rel="stylesheet" href="variables.css">
-  <link rel="stylesheet" href="styles-header.css">
-  <link rel="stylesheet" href="./styles-type.css">
-  <link rel="stylesheet" href="styles-footer.css">
-  <link rel="stylesheet" href="palette.css">
-  <style>
-/* developers popup style */
-/* The Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
-}
-
-.contact-container p{
-  text-align: center;
-}
-.modal-content {
-    background-color:beige;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-
-/* layout for the buttons */
-.contact-container {
-    text-align: center; 
-
-.button-grid {
-    display: flex;
-    justify-content: center; 
-}
-
-.left-buttons,
-.right-buttons {
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    gap: 10px;
-}
-
-.left-buttons {
-    margin-right: 10px;
-}
-
-.button {
-    display: flex;
-    align-items: center; 
-    padding: 10px;
-    background-color: #be0065;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.button i {
-    margin-right: 8px;
-}
-
-.button:hover {
-    background-color: rgb(138, 113, 56);
-}
-
-@media screen and (max-width: 600px) {
-    .contact-container {
-        text-align: center;
-    }
-
-    .button-grid {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .left-buttons,
-    .right-buttons {
-        flex: auto; 
-    }
-
-    .button {
-        width: auto; 
-    }
-}
-
-  </style>
-  <!-- developers style end -->
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/type.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/palette.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/about.css">
 </head>
 
 <body>
-  <!-- Tanvi Bisht and Samriddhi-->
+
+  <!-- Header (Tanvi Bisht and Samriddhi)-->
   <div class="header">
     <div class="logo-and-title">
       <div style="padding: 10px;"><i class="fab fa-aws"></i></div>
@@ -140,7 +48,7 @@
     </div>
     <div class="header-icons">
       <div class="footer-item">
-        <a class="footer-icons" href="void:javascrpit(0)" >
+        <a class="footer-icons" href="void:javascrpit(0)">
           <i class="fa fa-paint-brush"></i>
         </a>
       </div>
@@ -157,14 +65,13 @@
 
       <!-- <img src="i-icon.svg" class=" alt="Icon 2"> -->
       <!-- <img src="keyboard.svg" class=" alt="Icon 3"> -->
-      
+
+    </div>
   </div>
-</div>
 
-<!-- Colour palette by Advika and Pulak -->
-
-<style>
-  .theme-selector {
+  <!-- Color palette (Advika and Pulak) -->
+  <style>
+    .theme-selector {
       display: none;
       position: fixed;
       top: 50px;
@@ -175,131 +82,96 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       padding: 20px;
-  }
+    }
 
-  .theme-selector.show {
+    .theme-selector.show {
       display: block;
-  }
-</style>
+    }
+  </style>
 
-<div class="theme-selector">
-  <div class="container">
-      <div class="search-bar">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search..." id="search-input">
-      </div>
+  <div class="theme-selector">
+    <div class="container">
+      <!-- <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search..." id="search-input">
+      </div> -->
       <ul id="theme-list">
-          <li class="theme-item" data-theme-class="theme-bento">
-              <span class="theme-name"><b>bento</b></span>
-              <div class="color-palette">
-                  <span class="color-button" style="background: #2d394d;"></span>
-                  <span class="color-button" style="background: #ff7a90;"></span>
-                  <span class="color-button" style="background: #fffaf8;"></span>
-              </div>
-          </li>
-
-          <li class="theme-item" data-theme-class="theme-blue-dolphin">
-              <span class="theme-name">blue dolphin</span>
-              <div class="color-palette">
-                  <span class="color-button" style="background: #00e4ff;"></span>
-                  <span class="color-button" style="background: #014961;"></span>
-                  <span class="color-button" style="background: #ffcefb;"></span>
-              </div>
-          </li>
-
-          <li class="theme-item" data-theme-class="theme-monokai">
-            <span class="theme-name">monokai</span>
-            <div class="color-palette">
-                <span class="color-button" style="background: #a6e22e;"></span>
-                <span class="color-button" style="background: #e6db74;"></span>
-                <span class="color-button" style="background: #e2e2dc;"></span>
-            </div>
+        <li class="theme-item" data-theme-class="theme-bento">
+          <span class="theme-name"><b>bento</b></span>
+          <div class="color-palette">
+            <span class="color-button" style="background: #2d394d;"></span>
+            <span class="color-button" style="background: #ff7a90;"></span>
+            <span class="color-button" style="background: #fffaf8;"></span>
+          </div>
         </li>
-      
+
+        <li class="theme-item" data-theme-class="theme-blue-dolphin">
+          <span class="theme-name">blue dolphin</span>
+          <div class="color-palette">
+            <span class="color-button" style="background: #00e4ff;"></span>
+            <span class="color-button" style="background: #014961;"></span>
+            <span class="color-button" style="background: #ffcefb;"></span>
+          </div>
+        </li>
+
+        <li class="theme-item" data-theme-class="theme-monokai">
+          <span class="theme-name">monokai</span>
+          <div class="color-palette">
+            <span class="color-button" style="background: #a6e22e;"></span>
+            <span class="color-button" style="background: #e6db74;"></span>
+            <span class="color-button" style="background: #e2e2dc;"></span>
+          </div>
+        </li>
+
         <li class="theme-item" data-theme-class="theme-fledling">
           <span class="theme-name">fledling</span>
           <div class="color-palette">
-              <span class="color-button" style="background: #fc6e83;"></span>
-              <span class="color-button" style="background: #474747;"></span>
-              <span class="color-button" style="background: #e6d5d3;"></span>
+            <span class="color-button" style="background: #fc6e83;"></span>
+            <span class="color-button" style="background: #474747;"></span>
+            <span class="color-button" style="background: #e6d5d3;"></span>
           </div>
-      </li>
+        </li>
 
-      <li class="theme-item" data-theme-class="theme-lavender">
+        <li class="theme-item" data-theme-class="theme-lavender">
           <span class="theme-name">lavender</span>
           <div class="color-palette">
-              <span class="color-button" style="background: #ada6c2;"></span>
-              <span class="color-button" style="background: #e4e3e9;"></span>
-              <span class="color-button" style="background: #2f2a41;"></span>
+            <span class="color-button" style="background: #ada6c2;"></span>
+            <span class="color-button" style="background: #e4e3e9;"></span>
+            <span class="color-button" style="background: #2f2a41;"></span>
           </div>
-      </li>
+        </li>
 
-      <li class="theme-item" data-theme-class="theme-dark">
+        <li class="theme-item" data-theme-class="theme-dark">
           <span class="theme-name">dark</span>
           <div class="color-palette">
-              <span class="color-button" style="background: #eee;"></span>
-              <span class="color-button" style="background: #444;"></span>
-              <span class="color-button" style="background: #191919;"></span>
+            <span class="color-button" style="background: #eee;"></span>
+            <span class="color-button" style="background: #444;"></span>
+            <span class="color-button" style="background: #191919;"></span>
           </div>
-      </li>
+        </li>
 
-      <li class="theme-item" data-theme-class="theme-bushido">
+        <li class="theme-item" data-theme-class="theme-bushido">
           <span class="theme-name">bushido</span>
           <div class="color-palette">
-              <span class="color-button" style="background: #ec4c56;"></span>
-              <span class="color-button" style="background: #596172;"></span>
-              <span class="color-button" style="background: #f6f0e9;"></span>
+            <span class="color-button" style="background: #ec4c56;"></span>
+            <span class="color-button" style="background: #596172;"></span>
+            <span class="color-button" style="background: #f6f0e9;"></span>
           </div>
-      </li>
+        </li>
 
-      <li class="theme-item" data-theme-class="theme-lime">
+        <li class="theme-item" data-theme-class="theme-lime">
           <span class="theme-name">lime</span>
           <div class="color-palette">
-              <span class="color-button" style="background: #93c247;"></span>
-              <span class="color-button" style="background: #4b5257;"></span>
-              <span class="color-button" style="background: #bfcfdc;"></span>
+            <span class="color-button" style="background: #93c247;"></span>
+            <span class="color-button" style="background: #4b5257;"></span>
+            <span class="color-button" style="background: #bfcfdc;"></span>
           </div>
-      </li>
+        </li>
       </ul>
+    </div>
   </div>
-</div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const themeItems = document.querySelectorAll('.theme-item');
-  
-      themeItems.forEach(item => {
-          item.addEventListener('click', function() {
-              themeItems.forEach(item => item.classList.remove('selected'));
-              this.classList.add('selected');
-
-              const themeClass = this.getAttribute('data-theme-class');
-              document.body.className = themeClass;
-          });
-      });
-  
-      const searchInput = document.getElementById('search-input');
-      if (searchInput) {
-          searchInput.addEventListener('input', function() {
-              const filter = searchInput.value.toLowerCase();
-              themeItems.forEach(item => {
-                  const themeName = item.querySelector('.theme-name').textContent.toLowerCase();
-                  if (themeName.includes(filter)) {
-                      item.style.display = '';
-                  } else {
-                      item.style.display = 'none';
-                  }
-              });
-          });
-      }
-  
-      document.querySelector('.fa-paint-brush').addEventListener('click', function() {
-          document.querySelector('.theme-selector').classList.toggle('show');
-      });
-  });
-</script>
-
-  <!--  Type started (Riya Ahlawat and Samriddhi) -->
+  <!--  Typing section (Riya Ahlawat and Samriddhi) -->
   <main>
     <!-- <div id="header">
             <div id="info"></div>
@@ -348,11 +220,8 @@
       </div>
     </div>
   </main>
-  <!-- Type ended. -->
 
-  <!-- About section -->
-
-
+  <!-- About section (Tanvi Bisht and Riya Ahlawat)-->
   <div class="about-section">
     <h1>ABOUT US</h1>
     <h2>AWS Cloud Clubs</h2>
@@ -362,7 +231,9 @@
       develop new skills, and work on real-world projects. By participating in AWS Cloud Clubs, individuals can gain
       hands-on experience with AWS services, attend workshops and seminars, and connect with industry experts and peers.
       The clubs aim to foster innovation, enhance technical knowledge, and prepare members for cloud-related careers by
-      offering resources, mentorship, and networking opportunities. To know more about AWS CC, <a href = "https://aws.amazon.com/developer/community/students/cloudclubs/?community-captains-all.sort-by=item.additionalFields.sortPosition&community-captains-all.sort-order=asc&awsf.filter-location=*all&awsf.filter-year=*all" _target = blank> click here!</a></p>
+      offering resources, mentorship, and networking opportunities. To know more about AWS CC, <a
+        href="https://aws.amazon.com/developer/community/students/cloudclubs/?community-captains-all.sort-by=item.additionalFields.sortPosition&community-captains-all.sort-order=asc&awsf.filter-location=*all&awsf.filter-year=*all"
+        _target=blank> click here!</a></p>
     <h2>AWS Services</h2>
     <p>AWS Services encompass a wide array of cloud computing products that offer solutions for computing power,
       storage, and networking, tailored to meet the needs of businesses of all sizes. These services enable companies to
@@ -402,9 +273,7 @@
     </ul>
   </div>
 
-  <!-- About ended -->
-
-  <!-- Footer starts(Samriddhi) -->
+  <!-- Footer (Samriddhi) -->
   <footer id="footer">
     <div class="footer-container">
       <div class="footer-container-left">
@@ -433,64 +302,40 @@
           </a>
         </div>
         <div class="footer-item">
-          <a class="footer-icons"  target="_blank" id="developerIcon">
-            <i class="fa fa-user" ></i>
+          <a class="footer-icons" target="_blank" id="developerIcon">
+            <i class="fa fa-user"></i>
             Developers
           </a>
         </div>
-       
-        <!-- Developer Popup Tanvi-->
+
+        <!-- Developers Popup (Tanvi Bisht)-->
         <div id="developerModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
             <div class="contact-container">
               <h1>Meet the Developers</h1>
-              <p>Thank you for visiting our website! we're a dedicated team who collaborated closely to bring this website to life. Here's our development team:</p>
+              <p>Thank you for visiting our website! We're a dedicated team who collaborated closely to bring this
+                website to life. Here's our Development Team:</p>
               <div class="button-grid">
                 <div class="left-buttons">
-                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Riya Ahlawat</a>
-                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Pulak Srivastava</a>
-                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Advika Singhal</a>
+                  <a href="https://www.linkedin.com/in/tech-explorer-riyaaa/" class="button" target="_blank"><i class="fas fa-user"></i> Riya Ahlawat (TL)</a>
+                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Pulak Srivastava</a>
+                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Advika Singhal</a>
                 </div>
                 <div class="right-buttons">
-                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Samridhhi Tiwari</a>
-                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Tanvi Bisht</a>
-                  <a href="https://www.linkedin.com/in/akansha-chaurasia-47235b260/" class="button"><i class="fas fa-user"></i> Akansha Chaurasia</a>
+                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Samridhhi Tiwari</a>
+                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Tanvi Bisht</a>
+                  <a href="https://www.linkedin.com/in/akansha-chaurasia-47235b260/" class="button" target="_blank"><i
+                      class="fas fa-user"></i> Akansha Chaurasia</a>
                 </div>
               </div>
-              <p>You can connect with us through LinkedIn. 
-                We hope you enjoy using our website as much we enjoyed creating it! 
+              <p>You can connect with us through LinkedIn.
+                We hope you enjoy using our website as much we enjoyed creating it!
               </p>
             </div>
           </div>
         </div>
-       <!-- developers popeup end  -->
-       <!-- Developers popeup script start -->
-<script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const developerIcon = document.getElementById('developerIcon');
-            const modal = document.getElementById('developerModal');
-            const closeButton = document.querySelector('.close');
-
-            developerIcon.addEventListener('click', function (event) {
-                event.preventDefault();
-                modal.style.display = 'block';
-            });
-
-            closeButton.addEventListener('click', function () {
-                modal.style.display = 'none';
-            });
-
-            window.addEventListener('click', function (event) {
-                if (event.target == modal) {
-                    modal.style.display = 'none';
-                }
-            });
-        });
-    
-  </script>
-  <!-- modal script end -->
+        <!-- developers pop-up end  -->
 
       </div>
       <div class="footer-container-right">
@@ -513,16 +358,12 @@
       </div>
     </div>
   </footer>
-  <!-- Footer ends (Samriddhi) -->
-
 
   <!-- <script src="typing.js"></script> -->
   <script src="js/paragraphs.js"></script>
   <script src="js/script.js"></script>
-  
-    
-
-  
+  <script src="js/palette.js"></script>
+  <script src="js/modal.js"></script>
 
 </body>
 
