@@ -1,4 +1,4 @@
-@import url('variables.css');
+ @import url('variables.css');
 
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -87,7 +87,7 @@ h1 {
 }
 
 /* Media query for responsiveness */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     .button-grid {
         grid-template-columns: 1fr;
     }
@@ -95,4 +95,4 @@ h1 {
     h1 {
         text-align: center;
     }
-}
+} 

@@ -32,6 +32,103 @@
   <link rel="stylesheet" href="./styles-type.css">
   <link rel="stylesheet" href="styles-footer.css">
   <link rel="stylesheet" href="palette.css">
+  <style>
+/* developers popup style */
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.contact-container p{
+  text-align: center;
+}
+.modal-content {
+    background-color:beige;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* layout for the buttons */
+.contact-container {
+    text-align: center; 
+
+.button-grid {
+    display: flex;
+    justify-content: center; 
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: 10px;
+}
+
+.left-buttons {
+    margin-right: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    background-color: #be0065;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: rgb(138, 113, 56);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        text-align: center;
+    }
+
+    .button-grid {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .left-buttons,
+    .right-buttons {
+        flex: auto; 
+    }
+
+    .button {
+        width: auto; 
+    }
+}
+
+  </style>
+  <!-- developers style end -->
 </head>
 
 <body>
@@ -336,11 +433,65 @@
           </a>
         </div>
         <div class="footer-item">
-          <a class="footer-icons" href="developers.html" target="_blank">
-            <i class="fa fa-user"></i>
+          <a class="footer-icons"  target="_blank" id="developerIcon">
+            <i class="fa fa-user" ></i>
             Developers
           </a>
         </div>
+       
+        <!-- Developer Popup Tanvi-->
+        <div id="developerModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="contact-container">
+              <h1>Meet the Developers</h1>
+              <p>Thank you for visiting our website! we're a dedicated team who collaborated closely to bring this website to life. Here's our development team:</p>
+              <div class="button-grid">
+                <div class="left-buttons">
+                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Riya Ahlawat</a>
+                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Pulak Srivastava</a>
+                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Advika Singhal</a>
+                </div>
+                <div class="right-buttons">
+                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Samridhhi Tiwari</a>
+                  <a href="LINKEDIN PROFILE" class="button"><i class="fas fa-user"></i> Tanvi Bisht</a>
+                  <a href="https://www.linkedin.com/in/akansha-chaurasia-47235b260/" class="button"><i class="fas fa-user"></i> Akansha Chaurasia</a>
+                </div>
+              </div>
+              <p>You can connect with us through LinkedIn. 
+                We hope you enjoy using our website as much we enjoyed creating it! 
+              </p>
+            </div>
+          </div>
+        </div>
+       <!-- developers popeup end  -->
+       <!-- Developers popeup script start -->
+<script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const developerIcon = document.getElementById('developerIcon');
+            const modal = document.getElementById('developerModal');
+            const closeButton = document.querySelector('.close');
+
+            developerIcon.addEventListener('click', function (event) {
+                event.preventDefault();
+                modal.style.display = 'block';
+            });
+
+            closeButton.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    
+  </script>
+  <!-- modal script end -->
+
       </div>
       <div class="footer-container-right">
         <div class="footer-icons">
@@ -364,9 +515,14 @@
   </footer>
   <!-- Footer ends (Samriddhi) -->
 
+
   <!-- <script src="typing.js"></script> -->
   <script src="js/paragraphs.js"></script>
   <script src="js/script.js"></script>
+  
+    
+
+  
 
 </body>
 
