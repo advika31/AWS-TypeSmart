@@ -1,0 +1,11 @@
+.about-section{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .section {
+    transition: opacity 0.5s ease;
+  }
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
