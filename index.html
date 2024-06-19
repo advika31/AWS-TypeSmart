@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="styles/palette.css">
   <link rel="stylesheet" href="styles/modal.css">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <link rel="stylesheet" href="styles/info-keyboard.css">
 </head>
 
@@ -264,7 +265,7 @@
     <div class="footer-container">
       <div class="footer-container-left">
         <div class="footer-item">
-          <a class="footer-icons" href="contact_us.html">
+          <a class="footer-icons"  href="javascript:void(0);" id="contacts-contactBtn"> 
             <i class="fa fa-envelope"></i>
             Contact Us
           </a>
@@ -323,7 +324,35 @@
         </div>
         <!-- developers pop-up end  -->
 
+      
+
+   <!-- contact pop-up start  ( Akansha chaurasia ) -->
+<div class="contacts-popup" id="contacts-popup">
+  <div class="contacts-popup-things">
+      <span class="contacts_close" id="contacts-close-popup">&times;</span>
+      <div class="contacts-container">
+          <div class="contacts-map-container">
+              <!-- Embed your map iframe here -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8056942573885!2d77.2294329757856!3d28.665536075646727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683919c3b%3A0xf5fc331b74c2b9e2!2sIndira%20Gandhi%20Delhi%20Technical%20University%20for%20Women!5e0!3m2!1sen!2sin!4v1718804452113!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contacts-contact-form-container">
+              <h1>Contact Us</h1>
+              <form class="contacts-contact-form">
+                <input type="hidden" name="access_key" value="47c3ce45-249f-4c39-97e7-80972e46017d">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="phone" name="phone" placeholder="Phone No" required>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+                <button type="submit">Submit</button>
+              </form>
+          </div>
       </div>
+  </div>
+</div>
+
+ <!-- contact pop-up end  --> 
+    
+    </div>
       <div class="footer-container-right">
         <div class="footer-icons">
           <span class="footer-content">
@@ -350,6 +379,7 @@
   <script src="js/script.js"></script>
   <script src="js/palette.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/contact.js"></script>
   <script src="js/info-keyboard.js"></script>
 
 </body>
