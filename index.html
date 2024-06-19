@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="styles/palette.css">
   <link rel="stylesheet" href="styles/modal.css">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/info-keyboard.css">
 </head>
 
 <body>
@@ -48,17 +49,17 @@
     </div>
     <div class="header-icons">
       <div class="footer-item">
-        <a class="footer-icons" href="void:javascrpit(0)">
+        <a class="footer-icons" href="javascript:void(0)">
           <i class="fa fa-paint-brush"></i>
         </a>
       </div>
       <div class="footer-item">
-        <a class="footer-icons" href="" target="_blank">
+        <a class="footer-icons" href="javascript:void(0)" id="about">
           <i class="fa fa-info"></i>
         </a>
       </div>
       <div class="footer-item">
-        <a class="footer-icons" href="" target="_blank">
+        <a class="footer-icons" href="javascript:void(0)" id="typing">
           <i class="	fa fa-keyboard-o"></i>
         </a>
       </div>
@@ -70,25 +71,6 @@
   </div>
 
   <!-- Color palette (Advika and Pulak) -->
-  <style>
-    .theme-selector {
-      display: none;
-      position: fixed;
-      top: 50px;
-      right: 20px;
-      width: 400px;
-      z-index: 1000;
-      background-color: #073642;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-    }
-
-    .theme-selector.show {
-      display: block;
-    }
-  </style>
-
   <div class="theme-selector">
     <div class="container">
       <!-- <div class="search-bar">
@@ -190,6 +172,7 @@
       <div style="padding: 10px;"><i class="fa fa-globe"></i></div>
       <p>English</p>
     </div>
+  <div class="section active" id="wrapper">
     <div class="wrapper">
       <input type="text" class="input-field">
       <div class="content-box">
@@ -219,9 +202,11 @@
         </div>
       </div>
     </div>
+  </div>
   </main>
 
   <!-- About section (Tanvi Bisht and Riya Ahlawat)-->
+<div class="section hidden" id="about-section" style="display: none;">
   <div class="about-section">
     <h1>ABOUT US</h1>
     <h2>AWS Cloud Clubs</h2>
@@ -272,6 +257,7 @@
       </li>
     </ul>
   </div>
+</div>
 
   <!-- Footer (Samriddhi) -->
   <footer id="footer">
@@ -364,6 +350,7 @@
   <script src="js/script.js"></script>
   <script src="js/palette.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/info-keyboard.js"></script>
 
 </body>
 

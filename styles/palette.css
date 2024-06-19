@@ -84,6 +84,22 @@
     cursor: pointer;
     border: 1px solid var(--sub-alt-color, #073642);
 }
+.theme-selector {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 400px;
+  z-index: 1000;
+  background-color: #073642;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.theme-selector.show {
+  display: block;
+}
 
 
 /* Color - theme options*/
