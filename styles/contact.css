@@ -99,7 +99,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: center;
-    margin-top: 10px; /* Added margin-top to create space above the button */
+    margin: 10px; /* Added margin-top to create space above the button */
 }
 
 .contacts-contact-form button:hover {
