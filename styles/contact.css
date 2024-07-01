@@ -14,15 +14,17 @@
 }
 
 .contacts-popup-things {
-    background-color: rgb(255, 234, 184);
+    background-color: var(--bgColor);
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 90%;
+    width: 70%;
     max-width: 1200px;
     height: 70vh;
     box-sizing: border-box;
     overflow: auto; /* Enable scrolling for large content */
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.752);
 }
 
 .contacts_close {
@@ -35,6 +37,7 @@
 
 .contacts-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
 }
@@ -50,15 +53,16 @@
 }
 
 .contacts-contact-form-container {
-    background-color: rgb(255, 234, 184);
-    padding: 30px;
+    background-color: var(--bgColor);
+    padding: 20px 30px 10px 30px; /* Adjusted padding to add more space at the top */
     box-sizing: border-box;
+    margin-bottom: 10px; /* Added margin-bottom to create space below the form */
 }
 
 .contacts-contact-form-container h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #be0065;
+    color: var(--textColor);
 }
 
 .contacts-contact-form {
@@ -73,27 +77,45 @@
     border-radius: 10px;
     outline: none;
     background: #ffffff;
-    color: #be0065;
-    border: 2px solid #d91c81;
+    color: var(--textColor);
+    border: 2px solid var(--textColor);
     font-size: 14px;
 }
 
 .contacts-contact-form input::placeholder, .contacts-contact-form textarea::placeholder {
-    color: #be0065;
+    color: #121111;
 }
 
 .contacts-contact-form button {
     padding: 10px 40px;
     border: none;
     border-radius: 20px;
-    background-color: #be0065;
-    color: rgb(255, 238, 197);
+    background-color: var(--textColor);
+    color: var(--bgColor);
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: center;
+    margin-top: 10px; /* Added margin-top to create space above the button */
 }
 
 .contacts-contact-form button:hover {
-    background-color: #c2186a;
+    background-color: var(--textColor);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .contacts-container {
+        flex-direction: column;
+    }
+
+    .contacts-map-container {
+        order: 2; /* Map goes below the contact form */
+        width: 100%;
+    }
+
+    .contacts-contact-form-container {
+        order: 1; /* Contact form goes above the map */
+        width: 100%;
+    }
 }
