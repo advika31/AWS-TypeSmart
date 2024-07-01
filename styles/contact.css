@@ -23,8 +23,11 @@
     height: 70vh;
     box-sizing: border-box;
     overflow: auto; /* Enable scrolling for large content */
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.752);
+/*     border-radius: 20px; */
+/*     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.752); */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--black);
+    display: flex;
 }
 
 .contacts_close {
