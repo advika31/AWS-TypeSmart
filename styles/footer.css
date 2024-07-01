@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 .footer-container {
-    margin: 1rem 5rem;
+    margin: 3rem 5rem 0 5rem;
     -webkit-user-select: none;
     user-select: none;
     display: grid;
@@ -46,7 +46,6 @@
 }
 .footer-icons:hover{
     color: var(--hover);
-    font-weight: 600;
 }
 .footer-content {
     display: inline;
@@ -56,6 +55,15 @@
     .footer-container{
         margin: 1rem 2rem;
         font-size: small;
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+    .footer-container-left {
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-item {
+        flex: none;
     }
 }
 
