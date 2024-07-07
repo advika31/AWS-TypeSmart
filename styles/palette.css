@@ -123,9 +123,10 @@
   --black: #ff7a90;
   --incorrect: #bc42ba;
   --hover: #4a768d;
-  --correct: #263041;
+  --correct:#ff7a90;
   --wrong-highlighted: #fc2032;
-  --neon: #f04040;
+  /*--neon: #f04040;*/
+  --neon: #e8a0ac;
 }
 
 .theme-blue-dolphin {
@@ -135,9 +136,11 @@
   --black: #ffcefb;
   --incorrect: #ffbde6;
   --hover: #00e4ff;
-  --correct: #014961;
-  --wrong-highlighted: #d1a5fd;
-  --neon: #ff8188;
+  --correct: #ffbde6;
+  /*--correct: #014961;*/
+  --wrong-highlighted: #91d7df69;
+  --neon: #efefeff3;
+  ;
 
 }
 
@@ -146,11 +149,11 @@
     --bgColor: #272822;
     --black: #a6e22e;
     --hover: #e6db74;
-    --correct: #1f201b;
+    --correct: #a6e22e;
     --textColor: #e2e2dc;
     --incorrect: #ad637e;
-    --neon: #fd971f;
-    --wrong-highlighted: #f92672;
+    --neon:  #e6db74;
+    --wrong-highlighted:  #decb2781;
   }
 
 .theme-fledling {
@@ -160,9 +163,9 @@
   --sub-alt-color: #fc6e83;
   --textColor: #e6d5d3;
   --incorrect: #f52443;
-  --neon: #bd001c;
-  --wrong-highlighted: #ff0a2f;
-  --correct: #c5cd54;
+  --neon: #fc6e83;
+  --wrong-highlighted: #e43a5398;
+  --correct: #8e5568;
 }
 
 .theme-lavender {
@@ -170,11 +173,11 @@
   --bgColor: #ada6c2;
   --black: #e4e3e9;
   --hover: #e4e3e9;
-  --correct: #a19bb9;
+  --correct: #6d5bb7fc;
   --textColor: #2f2a41;
   --incorrect: #ca4754;
-  --neon: #7e2a33;
-  --wrong-highlighted: #ca4754;
+  --neon: #eeeeee;
+  --wrong-highlighted: #9b82afd4;
 }
 
 nav .textButton {
@@ -198,11 +201,11 @@ body.crtmode nav .textButton {
   --black: #eee;
   --hover: #444;
   --sub-alt-color: #191919;
-  --correct: #191919;
+  --correct: #a29e9ee1;
   --textColor: #eee;
-  --inncorrect: #da3333;
-  --wrong-highlighted: #da3333;
-  --neon: #791717;
+  --inncorrect: #67646b;
+  --wrong-highlighted: #b6a6a6a1;
+  --neon: #e9d0d0;
 }
 
 .theme-bushido {
@@ -213,8 +216,8 @@ body.crtmode nav .textButton {
   --textColor: #f6f0e9;
   --incorrect: #ec4c56;
   --wrong-highlighted: #9b333a;
-  --correct: #ecdc4c;
-  --neon: #bdb03d;
+  --correct: #ec4c56;
+  --neon: #ff7b84;
 }
 
 .theme-lime {
@@ -224,7 +227,7 @@ body.crtmode nav .textButton {
   --sub-alt-color: #737d82;
   --textColor: #bfcfdc;
   --incorrect: #ea4221;
-  --wrong-highlighted: #7e2a33;
-  --correct: #ea4221;
-  --neon: #7e2a33;
+  --wrong-highlighted: #deff4a8f;
+  --correct: #93c247;
+  --neon:  #deff4a;
 }
