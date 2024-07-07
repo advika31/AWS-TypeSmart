@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const themeItems = document.querySelectorAll('.theme-item');
+    const themeSelector = document.querySelector('.theme-selector'); 
+    const toggleButton = document.querySelector('.fa-paint-brush');
 
     themeItems.forEach(item => {
       item.addEventListener('click', function () {
@@ -28,5 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('.fa-paint-brush').addEventListener('click', function () {
       document.querySelector('.theme-selector').classList.toggle('show');
+    });
+
+      document.addEventListener('click', function (event) { // Added block
+        // Check if the click is outside the theme selector and the toggle button
+        if (!themeSelector.contains(event.target) && !toggleButton.contains(event.target)) {
+            themeSelector.classList.remove('show');
+        }
+
     });
   });

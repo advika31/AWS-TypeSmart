@@ -1,3 +1,6 @@
+// EXTRA FILE
+// OLD LOGIC THAT WAS USED IN TYPING AREA
+
 const words = 'Amazon Web Services (AWS) offers a comprehensive suite of cloud computing services, enabling businesses to build and deploy scalable, resilient, and secure applications. With AWS, organizations can access a wide range of services including compute, storage, databases, machine learning, analytics, and more. Services like Amazon EC2 provide resizable compute capacity in the cloud, while Amazon S3 offers highly durable object storage. Managed database services like Amazon RDS and Amazon DynamoDB simplify database management tasks, and AWS Lambda allows developers to run code without provisioning or managing servers. With AWS, businesses can innovate faster, reduce infrastructure costs, and scale their applications globally with ease.'.split(' ');
 const wordsCount = words.length;
 const gameTime = 30 * 1000; // milliseconds
