@@ -14,7 +14,7 @@ let timer,
     timeLeft = maxTime,
     charIndex = mistakes = isTyping = 0,
     isPopupOpen = false,
-    lineHeight = 24,
+    lineHeight = 21,
     initialLines = 3,
     currentLine = 0;
 
