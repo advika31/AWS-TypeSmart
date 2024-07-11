@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const closeBtn = document.querySelector('.contacts_close');
 
     document.getElementById('name').disabled = false;
-document.getElementById('message').disabled = false;
+    document.getElementById('message').disabled = false;
 
     // Function to open the popup
     function openPopup() {
