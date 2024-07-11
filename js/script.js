@@ -79,6 +79,10 @@ function initTyping() {
     const activeCharTop = activeChar.getBoundingClientRect().top;
     const previousChar = activeChar.previousElementSibling;
 
+    if (window.matchMedia("(max-width: 795px)").matches) {
+        lineHeight = 19;
+    }    
+
     if (previousChar) {
         const previousCharTop = previousChar.getBoundingClientRect().top;
         if (activeCharTop > previousCharTop + lineHeight) {
