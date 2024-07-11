@@ -1,46 +1,46 @@
 @import url('variables.css');
 
 .modal {
-    display: none;
-    font-weight: 500;
+    display: none; 
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(0, 0, 0); */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* padding-top: 60px; */
-}
-
-.contact-container h1 {
-    color: var(--black);
-}
-
-.contact-container p {
-    font-size: 1rem;
+    z-index: 1000; 
+    
 }
 
 .modal-content {
-    background-color: var(--bgColor);
-    margin: 15% auto;
-    padding: 20px;
-    border: 3px solid var(--black);
-    width: 80vw;
-    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
     max-width: 800px;
+    background-color: var(--bgColor); 
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--black);
-    display: flex;
+    box-sizing: border-box;
+    overflow: auto; 
 }
 
-/* layout for the buttons */
-.contact-container {
+
+.contact-container-developer h1 {
+    color: var(--black);
+}
+
+.contact-container-developer p {
+    font-size: 1rem;
+}
+
+
+
+.contact-container-developer {
     text-align: center;
     width: 100%;
 }
@@ -67,7 +67,7 @@
     padding: 10px;
     background-color: var(--bgColor);
     color: var(--textColor);
-    /* text-align: center; */
+   
     border: 2px solid var(--black);
     border-radius: 5px;
     text-decoration: none;
@@ -84,22 +84,24 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* .contact-container {
-        text-align: center;
-    } */
+   
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+        padding: 10px;
+    }
 
     .button-grid {
         flex-direction: column;
         align-items: center;
     }
 
-    /* .left-buttons,
-    .right-buttons {
-        flex: auto;
-    } */
+   
 
     .button {
-        /* width: auto; */
+        
         width: 40vw;
     }
-}
+} 
+
+
