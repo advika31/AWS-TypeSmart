@@ -17,7 +17,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-margin: 1rem;
+  margin: 1rem;
 }
 
 ::selection{
@@ -48,40 +48,41 @@ margin: 1rem;
 
 .content-box .typing-text{
   overflow: hidden;
-  max-height: 20rem;
+  height: 178px;
 }
 
-.typing-text::-webkit-scrollbar{
+/* .typing-text::-webkit-scrollbar{
   width: 0;
-}
+} */
 
 .typing-text p{
   font-size: 21px;
-  text-align: justify;
+  text-align: left;
   letter-spacing: 1px;
-  /* word-break: break-all; */
+  word-break: break-all;
 }
 
-.typing-text p span{
+
+.typing-text p .char{
   position: relative;
 }
 
-.typing-text p span.correct{
+.typing-text p .char.correct{
   color: var(--correct);
 }
 
-.typing-text p span.incorrect{
+.typing-text p .char.incorrect{
   color: var(--incorrectA );
   outline: 1px solid var(--black);
   background: var(--wrong-highlighted);
   border-radius: 4px;
 }
 
-.typing-text p span.active{
+.typing-text p .char.active{
   color: var(--neon);
 }
 
-.typing-text p span.active::before{
+.typing-text p .char.active::before{
   position: absolute;
   content: "";
   height: 2px;
@@ -175,7 +176,7 @@ li:not(:first-child) span{
     padding: 20px 0;
   }
   .content-box .typing-text{
-    max-height: 20rem;
+    max-height: 161px;
   }
   .typing-text p{
     font-size: 19px;
