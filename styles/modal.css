@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000; 
+    overflow: hidden; 
     
 }
 
@@ -27,6 +28,8 @@
     box-shadow: 0 5px 15px var(--black);
     box-sizing: border-box;
     overflow: auto; 
+    max-height: 80%; 
+
 }
 
 
@@ -88,6 +91,8 @@
     .modal-content {
         width: 90%;
         margin: 10% auto;
+        /* added max-height */
+        max-height: 90%; 
         padding: 10px;
     }
 
@@ -99,8 +104,8 @@
    
 
     .button {
-        
-        width: 40vw;
+        width: 80%;
+        /* width: 40vw; */
     }
 } 
 
