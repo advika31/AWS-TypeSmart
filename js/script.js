@@ -13,17 +13,19 @@ let timer,
     maxTime = 60,
     timeLeft = maxTime,
     charIndex = mistakes = isTyping = 0,
-    isPopupOpen = false;
-
+    isPopupOpen = false,
+    lineHeight = 21,
+    initialLines = 3,
+    currentLine = 0;
 
 function loadParagraph() {
     const ranIndex = Math.floor(Math.random() * paragraphs.length);
     typingText.innerHTML = "";
     paragraphs[ranIndex].split("").forEach(char => {
-        let span = `<span>${char}</span>`
+        let span = `<span class="char">${char}</span>`;
         typingText.innerHTML += span;
     });
-    typingText.querySelectorAll("span")[0].classList.add("active");
+    typingText.querySelectorAll(".char")[0].classList.add("active");
     document.addEventListener("keydown", (e) => {
         if (!isPopupOpen) inpField.focus();
     });
@@ -35,7 +37,7 @@ function loadParagraph() {
 function initTyping() {
     if (isPopupOpen) return; // Prevent typing test when popup is open
 
-    let characters = typingText.querySelectorAll("span");
+    let characters = typingText.querySelectorAll(".char");
     let typedChar = inpField.value.split("")[charIndex];
     if (charIndex < characters.length && timeLeft > 0) { // Allow typing till the end of characters
         if (!isTyping) {
@@ -72,6 +74,24 @@ function initTyping() {
         clearInterval(timer);
         inpField.value = "";
     }
+
+    const activeChar = typingText.querySelector(".char.active");
+    const activeCharTop = activeChar.getBoundingClientRect().top;
+    const previousChar = activeChar.previousElementSibling;
+
+    if (window.matchMedia("(max-width: 795px)").matches) {
+        lineHeight = 19;
+    }    
+
+    if (previousChar) {
+        const previousCharTop = previousChar.getBoundingClientRect().top;
+        if (activeCharTop > previousCharTop + lineHeight) {
+            currentLine++;
+            if (currentLine > initialLines) {
+                typingText.style.marginTop = -(lineHeight * (currentLine - initialLines))*1.52 + "px";
+            }
+        }
+    }
 }
 
 function initTimer() {
@@ -95,6 +115,8 @@ function resetGame() {
     wpmTag.innerText = 0;
     mistakeTag.innerText = 0;
     cpmTag.innerText = 0;
+    typingText.style.marginTop = "0px";
+    currentLine = 0;
 }
 
 // Function to open the popup
