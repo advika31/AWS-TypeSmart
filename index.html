@@ -366,14 +366,17 @@
           </div>
           <div class="contacts-contact-form-container">
               <h1>Contact Us</h1>
-              <form class="contacts-contact-form">
-                <input type="hidden" name="access_key" value="47c3ce45-249f-4c39-97e7-80972e46017d">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <input type="text" id="phone" name="phone" placeholder="Phone No" pattern="\d{10}" maxlength="10" required>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
-                <button type="submit">Submit</button>
-              </form>
+              <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="47c3ce45-249f-4c39-97e7-80972e46017d">
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <button type="submit">Submit Form</button>
+
+</form>
           </div>
       </div>
   </div>
