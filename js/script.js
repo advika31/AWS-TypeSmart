@@ -16,7 +16,8 @@ let timer,
     isPopupOpen = false,
     lineHeight = 21,
     initialLines = 3,
-    currentLine = 0;
+    currentLine = 0,
+    scrollFactor = 1.51;
 
 function loadParagraph() {
     const ranIndex = Math.floor(Math.random() * paragraphs.length);
@@ -81,14 +82,20 @@ function initTyping() {
 
     if (window.matchMedia("(max-width: 795px)").matches) {
         lineHeight = 19;
+        scrollFactor = 1.48
     }    
+
+    if (window.matchMedia("(max-width: 518px)").matches) {
+        lineHeight = 18;
+        scrollFactor = 1.47
+    }   
 
     if (previousChar) {
         const previousCharTop = previousChar.getBoundingClientRect().top;
         if (activeCharTop > previousCharTop + lineHeight) {
             currentLine++;
             if (currentLine > initialLines) {
-                typingText.style.marginTop = -(lineHeight * (currentLine - initialLines))*1.52 + "px";
+                typingText.style.marginTop = -(lineHeight * (currentLine - initialLines))*(scrollFactor) + "px";
             }
         }
     }
