@@ -1,171 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EXSNYF46B9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXSNYF46B9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "G-EXSNYF46B9");
+    </script>
 
-  gtag('config', 'G-EXSNYF46B9');
-</script>
+    <!-- html boilerplate -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS TypeSmart</title>
 
-  <!-- html boilerplate -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AWS TypeSmart</title>
+    <!-- Poppins font and svg awesome font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      crossorigin="anonymous"
+    />
 
-  <!-- Poppins font and svg awesome font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
+    <!-- CSS sheets -->
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/type.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/palette.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/info-keyboard.css" />
+  </head>
 
-  <!-- CSS sheets -->
-  <link rel="stylesheet" href="variables.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/type.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/palette.css">
-  <link rel="stylesheet" href="styles/modal.css">
-  <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/contact.css">
-  <link rel="stylesheet" href="styles/info-keyboard.css">
-</head>
+  <body>
+    <!-- Header (Tanvi Bisht and Samriddhi)-->
+    <div class="header">
+      <div class="logo-and-title">
+        <div style="padding: 10px"><i class="fab fa-aws"></i></div>
+        <span class="site-title">TypeSmart</span>
+      </div>
+      <div class="header-icons">
+        <div class="footer-item">
+          <a class="footer-icons" href="javascript:void(0)">
+            <i class="fa fa-paint-brush"></i>
+          </a>
+        </div>
+        <div class="footer-item">
+          <a class="footer-icons" href="javascript:void(0)" id="about">
+            <i class="fa fa-info"></i>
+          </a>
+        </div>
+        <div class="footer-item">
+          <a class="footer-icons" href="javascript:void(0)" id="typing">
+            <i class="fa fa-keyboard-o"></i>
+          </a>
+        </div>
 
-<body>
-
-  <!-- Header (Tanvi Bisht and Samriddhi)-->
-  <div class="header">
-    <div class="logo-and-title">
-      <div style="padding: 10px;"><i class="fab fa-aws"></i></div>
-      <span class="site-title">TypeSmart</span>
+        <!-- <img src="i-icon.svg" class=" alt="Icon 2"> -->
+        <!-- <img src="keyboard.svg" class=" alt="Icon 3"> -->
+      </div>
     </div>
-    <div class="header-icons">
-      <div class="footer-item">
-        <a class="footer-icons" href="javascript:void(0)">
-          <i class="fa fa-paint-brush"></i>
-        </a>
-      </div>
-      <div class="footer-item">
-        <a class="footer-icons" href="javascript:void(0)" id="about">
-          <i class="fa fa-info"></i>
-        </a>
-      </div>
-      <div class="footer-item">
-        <a class="footer-icons" href="javascript:void(0)" id="typing">
-          <i class="	fa fa-keyboard-o"></i>
-        </a>
-      </div>
 
-      <!-- <img src="i-icon.svg" class=" alt="Icon 2"> -->
-      <!-- <img src="keyboard.svg" class=" alt="Icon 3"> -->
-
-    </div>
-  </div>
-
-  <!-- Color palette (Advika and Pulak) -->
-  <div class="theme-selector">
-    <div class="container">
-      <!-- <div class="search-bar">
+    <!-- Color palette (Advika and Pulak) -->
+    <div class="theme-selector">
+      <div class="container">
+        <!-- <div class="search-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Search..." id="search-input">
       </div> -->
-      <ul id="theme-list">
-        <li class="theme-item" data-theme-class="theme-cheesecake">
-          <span class="theme-name"><b>cheesecake</b></span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #ffeec5;"></span>
-            <span class="color-button" style="background: #be0065;"></span>
-            <span class="color-button" style="background: #695a5e;"></span>
-          </div>
-        </li>
+        <ul id="theme-list">
+          <li class="theme-item" data-theme-class="theme-cheesecake">
+            <span class="theme-name"><b>cheesecake</b></span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #ffeec5"></span>
+              <span class="color-button" style="background: #be0065"></span>
+              <span class="color-button" style="background: #695a5e"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-bento">
-          <span class="theme-name"><b>bento</b></span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #2d394d;"></span>
-            <span class="color-button" style="background: #ff7a90;"></span>
-            <span class="color-button" style="background: #fffaf8;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-bento">
+            <span class="theme-name"><b>bento</b></span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #2d394d"></span>
+              <span class="color-button" style="background: #ff7a90"></span>
+              <span class="color-button" style="background: #fffaf8"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-blue-dolphin">
-          <span class="theme-name">blue dolphin</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #00e4ff;"></span>
-            <span class="color-button" style="background: #014961;"></span>
-            <span class="color-button" style="background: #ffcefb;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-blue-dolphin">
+            <span class="theme-name">blue dolphin</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #00e4ff"></span>
+              <span class="color-button" style="background: #014961"></span>
+              <span class="color-button" style="background: #ffcefb"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-monokai">
-          <span class="theme-name">monokai</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #a6e22e;"></span>
-            <span class="color-button" style="background: #e6db74;"></span>
-            <span class="color-button" style="background: #e2e2dc;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-monokai">
+            <span class="theme-name">monokai</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #a6e22e"></span>
+              <span class="color-button" style="background: #e6db74"></span>
+              <span class="color-button" style="background: #e2e2dc"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-fledling">
-          <span class="theme-name">fledling</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #fc6e83;"></span>
-            <span class="color-button" style="background: #474747;"></span>
-            <span class="color-button" style="background: #e6d5d3;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-fledling">
+            <span class="theme-name">fledling</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #fc6e83"></span>
+              <span class="color-button" style="background: #474747"></span>
+              <span class="color-button" style="background: #e6d5d3"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-lavender">
-          <span class="theme-name">lavender</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #ada6c2;"></span>
-            <span class="color-button" style="background: #e4e3e9;"></span>
-            <span class="color-button" style="background: #2f2a41;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-lavender">
+            <span class="theme-name">lavender</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #ada6c2"></span>
+              <span class="color-button" style="background: #e4e3e9"></span>
+              <span class="color-button" style="background: #2f2a41"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-dark">
-          <span class="theme-name">dark</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #eee;"></span>
-            <span class="color-button" style="background: #444;"></span>
-            <span class="color-button" style="background: #111;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-dark">
+            <span class="theme-name">dark</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #eee"></span>
+              <span class="color-button" style="background: #444"></span>
+              <span class="color-button" style="background: #111"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-bushido">
-          <span class="theme-name">bushido</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #ec4c56;"></span>
-            <span class="color-button" style="background: #596172;"></span>
-            <span class="color-button" style="background: #f6f0e9;"></span>
-          </div>
-        </li>
+          <li class="theme-item" data-theme-class="theme-bushido">
+            <span class="theme-name">bushido</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #ec4c56"></span>
+              <span class="color-button" style="background: #596172"></span>
+              <span class="color-button" style="background: #f6f0e9"></span>
+            </div>
+          </li>
 
-        <li class="theme-item" data-theme-class="theme-lime">
-          <span class="theme-name">lime</span>
-          <div class="color-palette">
-            <span class="color-button" style="background: #93c247;"></span>
-            <span class="color-button" style="background: #4b5257;"></span>
-            <span class="color-button" style="background: #bfcfdc;"></span>
-          </div>
-        </li>
-      </ul>
+          <li class="theme-item" data-theme-class="theme-lime">
+            <span class="theme-name">lime</span>
+            <div class="color-palette">
+              <span class="color-button" style="background: #93c247"></span>
+              <span class="color-button" style="background: #4b5257"></span>
+              <span class="color-button" style="background: #bfcfdc"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <!--  Typing section (Riya Ahlawat and Samriddhi) -->
-  <main>
-    <!-- <div id="header">
+    <!--  Typing section (Riya Ahlawat and Samriddhi) -->
+    <main>
+      <!-- <div id="header">
             <div id="info"></div>
             <div id="buttons">
                 <button id="newGameBtn">New game</button>
@@ -178,243 +190,411 @@
                 <span class="material-symbols-outlined">highlight_mouse_cursor</span>
                 Click here to focus.</div>
         </div> -->
-    <div class="language">
-      <div style="padding: 10px;"><i class="fa fa-globe"></i></div>
-      <p>English</p>
-    </div>
-  <div class="section active" id="wrapper">
-    <div class="wrapper">
-      <input type="text" class="input-field">
-      <div class="content-box">
-        <div class="typing-text">
-          <p></p>
-        </div>
-        <div class="content">
-          <ul class="result-details">
-            <li class="time">
-              <p>Time Left:</p>
-              <span><b>60</b>s</span>
-            </li>
-            <li class="mistake">
-              <p>Mistakes:</p>
-              <span>0</span>
-            </li>
-            <li class="wpm">
-              <p>WPM:</p>
-              <span>0</span>
-            </li>
-            <li class="cpm">
-              <p>CPM:</p>
-              <span>0</span>
-            </li>
-          </ul>
-          <button>Try Again</button>
-        </div>
+      <div class="language">
+        <div style="padding: 10px"><i class="fa fa-globe"></i></div>
+        <p>English</p>
       </div>
-    </div>
-  </div>
-  </main>
-
-  <!-- About section (Tanvi Bisht and Riya Ahlawat)-->
-<div class="section hidden" id="about-section" style="display: none;">
-  <div class="about-section">
-    <h1>ABOUT US</h1>
-    <h2>AWS Cloud Clubs</h2>
-    <p>AWS Cloud Clubs are vibrant communities designed for cloud enthusiasts to come together and share their passion
-      for Amazon Web Services (AWS).
-      These clubs provide a collaborative environment where members can learn about the latest cloud technologies,
-      develop new skills, and work on real-world projects. By participating in AWS Cloud Clubs, individuals can gain
-      hands-on experience with AWS services, attend workshops and seminars, and connect with industry experts and peers.
-      The clubs aim to foster innovation, enhance technical knowledge, and prepare members for cloud-related careers by
-      offering resources, mentorship, and networking opportunities. To know more about AWS CC, <a class="know-more"
-        href="https://aws.amazon.com/developer/community/students/cloudclubs/?community-captains-all.sort-by=item.additionalFields.sortPosition&community-captains-all.sort-order=asc&awsf.filter-location=*all&awsf.filter-year=*all"
-        target="_blank"> click here!</a></p>
-    <h2>AWS Services</h2>
-    <p>AWS Services encompass a wide array of cloud computing products that offer solutions for computing power,
-      storage, and networking, tailored to meet the needs of businesses of all sizes. These services enable companies to
-      scale their operations quickly and efficiently, providing a robust infrastructure without the need for significant
-      upfront investment in hardware. AWS Services include versatile tools like Amazon EC2 for scalable computing power,
-      Amazon S3 for reliable and secure storage, and AWS Lambda for serverless computing. By leveraging AWS Services,
-      businesses can innovate faster, improve their agility, and reduce costs, all while ensuring high performance,
-      security, and compliance. Some of the services are listed below.</p>
-    <ul class="aws-services">
-      <li>
-        <h3>Amazon EC2 🚀</h3>
-        <p>Amazon Elastic Compute Cloud (EC2) provides scalable computing capacity in the AWS cloud. Using Amazon EC2
-          eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. 
-          <a class="know-more"
-          href="https://aws.amazon.com/ec2/"
-          target="_blank">Know more!</a></p>
-      </li>
-      <li>
-        <h3>Amazon S3 💾</h3>
-        <p>Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability,
-          data availability, security, and performance. <a class="know-more"
-          href="https://aws.amazon.com/s3/"
-          target="_blank">Know more!</a></p>
-      </li>
-      <li>
-        <h3>AWS Lambda ⚡</h3>
-        <p>AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you
-          consume. <a class="know-more"
-          href="https://aws.amazon.com/lambda/"
-          target="_blank">Know more!</a></p>
-      </li>
-      <li>
-        <h3>Amazon RDS 🗄</h3>
-        <p>Amazon Relational Database Service (RDS) makes it easy to set up, operate, and scale a relational database in
-          the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration
-          tasks. <a class="know-more"
-          href="https://aws.amazon.com/rds/"
-          target="_blank">Know more!</a></p>
-      </li>
-      <li>
-        <h3>Amazon DynamoDB 📊</h3>
-        <p>Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at
-          any scale. It’s a fully managed, multi-region, multi-active, durable database with built-in security, backup
-          and restore, and in-memory caching. <a class="know-more"
-          href="https://aws.amazon.com/dynamodb/"
-          target="_blank">Know more!</a></p>
-      </li>
-      <li>
-        <h3>Amazon Route 53 🌐</h3>
-        <p>Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed
-           for developers and corporations to route the end users to Internet applications by translating human-readable 
-           names into the numeric IP addresses. You can use Route 53 to perform three main
-           functions: domain registration, DNS routing, and health checking. <a class="know-more"
-          href="https://aws.amazon.com/route53/"
-          target="_blank">Know more!</a></p>
-      </li>
-    </ul>
-  </div>
-</div>
-
-  <!-- Footer (Samriddhi) -->
-  <footer id="footer">
-    <div class="footer-container">
-      <div class="footer-container-left">
-        <div class="footer-item">
-          <a class="footer-icons"  href="javascript:void(0);" id="contacts-contactBtn"> 
-            <i class="fa fa-envelope"></i>
-            Contact Us
-          </a>
-        </div>
-        <div class="footer-item">
-          <a class="footer-icons" href="https://www.instagram.com/awscloudclubigdtuw" target="_blank">
-            <i class="fab fa-instagram"></i>
-            Instagram
-          </a>
-        </div>
-        <div class="footer-item">
-          <a class="footer-icons" href="https://www.linkedin.com/company/aws-cloud-club-igdtuw/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-            LinkedIn
-          </a>
-        </div>
-        <div class="footer-item">
-          <a class="footer-icons" href="https://x.com/AWSClubIGDTUW?t=Mv5rpAyBkvI8AGfDC6ayoQ&s=09" target="_blank">
-            <i class="fa fa-twitter"></i>
-            X
-          </a>
-        </div>
-        <div class="footer-item">
-          <a class="footer-icons" target="_blank" id="developerIcon">
-            <i class="fa fa-user"></i>
-            Developers
-          </a>
-        </div>
-
-        <!-- Developers Popup (Tanvi Bisht)-->
-        <div id="developerModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="contact-container-developer">
-              <h1>Meet the Developers</h1>
-              <p>Thank you for visiting our website! We're a dedicated team who collaborated closely to bring this
-                website to life. Here's our Development Team:</p>
-              <div class="button-grid">
-                <div class="left-buttons">
-                  <a href="https://www.linkedin.com/in/tech-explorer-riyaaa/" class="button" target="_blank"><i class="fas fa-user"></i> Riya Ahlawat (TL)</a>
-                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Pulak Srivastava</a>
-                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Advika Singhal</a>
-                </div>
-                <div class="right-buttons">
-                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Samriddhi Tiwari</a>
-                  <a href="LINKEDIN PROFILE" class="button" target="_blank"><i class="fas fa-user"></i> Tanvi Bisht</a>
-                  <a href="https://www.linkedin.com/in/akansha-chaurasia-47235b260/" class="button" target="_blank"><i
-                      class="fas fa-user"></i> Akansha Chaurasia</a>
-                </div>
-              </div>
-              <p>You can connect with us through LinkedIn.
-                We hope you enjoy using our website as much we enjoyed creating it!
-              </p>
+      <div class="section active" id="wrapper">
+        <div class="wrapper">
+          <input type="text" class="input-field" />
+          <div class="content-box">
+            <div class="typing-text">
+              <p></p>
+            </div>
+            <div class="content">
+              <ul class="result-details">
+                <li class="time">
+                  <p>Time Left:</p>
+                  <span><b>60</b>s</span>
+                </li>
+                <li class="mistake">
+                  <p>Mistakes:</p>
+                  <span>0</span>
+                </li>
+                <li class="wpm">
+                  <p>WPM:</p>
+                  <span>0</span>
+                </li>
+                <li class="cpm">
+                  <p>CPM:</p>
+                  <span>0</span>
+                </li>
+              </ul>
+              <button>Try Again</button>
             </div>
           </div>
         </div>
-        <!-- developers pop-up end  -->
-
-      
-
-   <!-- contact pop-up start  ( Akansha chaurasia ) -->
-<div class="contacts-popup" id="contacts-popup">
-  <div class="contacts-popup-things">
-      <span class="contacts_close" id="contacts-close-popup">&times;</span>
-      <div class="contacts-container">
-          <div class="contacts-map-container">
-              <!-- Embed your map iframe here -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8056942573885!2d77.2294329757856!3d28.665536075646727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683919c3b%3A0xf5fc331b74c2b9e2!2sIndira%20Gandhi%20Delhi%20Technical%20University%20for%20Women!5e0!3m2!1sen!2sin!4v1718804452113!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
-          </div>
-          <div class="contacts-contact-form-container">
-              <h1>Contact Us</h1>
-              <form action="https://api.web3forms.com/submit" method="POST">
-
-    <input type="hidden" name="access_key" value="47c3ce45-249f-4c39-97e7-80972e46017d">
-
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-    <button type="submit">Submit Form</button>
-
-</form>
-          </div>
       </div>
-  </div>
-</div>
+    </main>
 
- <!-- contact pop-up end  --> 
-    
-    </div>
-      <div class="footer-container-right">
-        <div class="footer-icons">
-          <span class="footer-content">
-            Visit:
-          </span>
-          <a class="footer-icons" href="https://payalnarwal.github.io/AWS-Cloud-Club-IGDTUW-official-website/"
-            target="_blank">
-            <i class="fab fa-aws"></i>
-            Cloud Club IGDTUW
-          </a>
-        </div>
-        <div>
-          <p class="footer-content">
-            Copyright &copy; 2024, AWS CC IGDTUW.<br />
-            All rights reserved.
-          </p>
-        </div>
+    <!-- About section (Tanvi Bisht and Riya Ahlawat)-->
+    <div class="section hidden" id="about-section" style="display: none">
+      <div class="about-section">
+        <h1>ABOUT US</h1>
+        <h2>AWS Cloud Clubs</h2>
+        <p>
+          AWS Cloud Clubs are vibrant communities designed for cloud enthusiasts
+          to come together and share their passion for Amazon Web Services
+          (AWS). These clubs provide a collaborative environment where members
+          can learn about the latest cloud technologies, develop new skills, and
+          work on real-world projects. By participating in AWS Cloud Clubs,
+          individuals can gain hands-on experience with AWS services, attend
+          workshops and seminars, and connect with industry experts and peers.
+          The clubs aim to foster innovation, enhance technical knowledge, and
+          prepare members for cloud-related careers by offering resources,
+          mentorship, and networking opportunities. To know more about AWS CC,
+          <a
+            class="know-more"
+            href="https://aws.amazon.com/developer/community/students/cloudclubs/?community-captains-all.sort-by=item.additionalFields.sortPosition&community-captains-all.sort-order=asc&awsf.filter-location=*all&awsf.filter-year=*all"
+            target="_blank"
+          >
+            click here!</a
+          >
+        </p>
+        <h2>AWS Services</h2>
+        <p>
+          AWS Services encompass a wide array of cloud computing products that
+          offer solutions for computing power, storage, and networking, tailored
+          to meet the needs of businesses of all sizes. These services enable
+          companies to scale their operations quickly and efficiently, providing
+          a robust infrastructure without the need for significant upfront
+          investment in hardware. AWS Services include versatile tools like
+          Amazon EC2 for scalable computing power, Amazon S3 for reliable and
+          secure storage, and AWS Lambda for serverless computing. By leveraging
+          AWS Services, businesses can innovate faster, improve their agility,
+          and reduce costs, all while ensuring high performance, security, and
+          compliance. Some of the services are listed below.
+        </p>
+        <ul class="aws-services">
+          <li>
+            <h3>Amazon EC2 🚀</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/pm/sagemaker/"
+                target="_blank"
+                >Amazon Elastic Compute Cloud</a
+              >
+              (EC2) provides scalable computing capacity in the AWS cloud. Using
+              Amazon EC2 eliminates your need to invest in hardware up front, so
+              you can develop and deploy applications faster.
+            </p>
+          </li>
+          <li>
+            <h3>Amazon S3 💾</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/pm/sagemaker/"
+                target="_blank"
+                >Amazon Simple Storage Service</a
+              >
+              (S3) is an object storage service
+              that provides scalable, secure, and durable cloud storage. It
+              allows you to store and retrieve any amount of data at any time,
+              making it ideal for backup, data archiving, and web applications.
+              S3 supports flexible data management, including versioning, access
+              control, and lifecycle policies. It’s designed for high
+              availability and integrates with other AWS services for easy data
+              management and analytics.
+            </p>
+          </li>
+          <li>
+            <h3>AWS Lambda ⚡</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/lambda/"
+                target="_blank"
+                >AWS Lambda</a
+              >
+              is a serverless compute service that lets you run code without
+              provisioning or managing servers. You upload your code, and Lambda
+              automatically scales to handle incoming requests. It supports
+              various programming languages and integrates with other AWS
+              services, allowing you to build scalable, event-driven
+              applications. You only pay for the compute time used, making it
+              cost-efficient for many use cases.
+            </p>
+          </li>
+          <li>
+            <h3>Amazon RDS 🗄</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/lambda/"
+                target="_blank"
+                >Amazon Relational Database Service</a
+              >
+              (RDS) makes it easy to set up, operate, and scale a relational
+              database in the cloud. It provides cost-efficient and resizable
+              capacity while automating time-consuming administration tasks.
+            </p>
+          </li>
+          <li>
+            <h3>Amazon DynamoDB 📊</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/pm/sagemaker/"
+                target="_blank"
+                >Amazon DynamoDB</a
+              >
+              is a key-value and document database that delivers single-digit
+              millisecond performance at any scale. It’s a fully managed,
+              multi-region, multi-active, durable database with built-in
+              security, backup and restore, and in-memory caching.
+            </p>
+          </li>
+          <li>
+            <h3>Amazon Route 53 🌐</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/pm/sagemaker/"
+                target="_blank"
+                >Amazon Route 53</a
+              >
+              is a highly available and scalable cloud Domain Name System (DNS)
+              web service. It is designed for developers and corporations to
+              route the end users to Internet applications by translating
+              human-readable names into the numeric IP addresses. You can use
+              Route 53 to perform three main functions: domain registration, DNS
+              routing, and health checking.
+            </p>
+          </li>
+          <li>
+            <h3>Amazon SageMaker 💾</h3>
+            <p>
+              <a
+                class="know-more"
+                href="https://aws.amazon.com/pm/sagemaker/"
+                target="_blank"
+                >Amazon SageMaker</a
+              >
+              is a managed service by AWS for building, training, and deploying
+              machine learning models. It simplifies the ML workflow with tools
+              for data preparation, model training, and deployment. SageMaker
+              supports popular ML frameworks and automates tasks like model
+              tuning, making it easier to scale machine learning applications.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
-  <!-- Footer end -->
 
-  <!-- <script src="typing.js"></script> -->
-  <script src="js/paragraphs.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/palette.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/info-keyboard.js"></script>
+    <!-- Footer (Samriddhi) -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-container-left">
+          <div class="footer-item">
+            <a
+              class="footer-icons"
+              href="javascript:void(0);"
+              id="contacts-contactBtn"
+            >
+              <i class="fa fa-envelope"></i>
+              Contact Us
+            </a>
+          </div>
+          <div class="footer-item">
+            <a
+              class="footer-icons"
+              href="https://www.instagram.com/awscloudclubigdtuw"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+              Instagram
+            </a>
+          </div>
+          <div class="footer-item">
+            <a
+              class="footer-icons"
+              href="https://www.linkedin.com/company/aws-cloud-club-igdtuw/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
+          <div class="footer-item">
+            <a
+              class="footer-icons"
+              href="https://x.com/AWSClubIGDTUW?t=Mv5rpAyBkvI8AGfDC6ayoQ&s=09"
+              target="_blank"
+            >
+              <i class="fa fa-twitter"></i>
+              X
+            </a>
+          </div>
+          <div class="footer-item">
+            <a class="footer-icons" target="_blank" id="developerIcon">
+              <i class="fa fa-user"></i>
+              Developers
+            </a>
+          </div>
 
-</body>
+          <!-- Developers Popup (Tanvi Bisht)-->
+          <div id="developerModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="contact-container-developer">
+                <h1>Meet the Developers</h1>
+                <p>
+                  Thank you for visiting our website! We're a dedicated team who
+                  collaborated closely to bring this website to life. Here's our
+                  Development Team:
+                </p>
+                <div class="button-grid">
+                  <div class="left-buttons">
+                    <a
+                      href="https://www.linkedin.com/in/tech-explorer-riyaaa/"
+                      class="button"
+                      target="_blank"
+                      ><i class="fas fa-user"></i> Riya Ahlawat (TL)</a
+                    >
+                    <a href="LINKEDIN PROFILE" class="button" target="_blank"
+                      ><i class="fas fa-user"></i> Pulak Srivastava</a
+                    >
+                    <a href="LINKEDIN PROFILE" class="button" target="_blank"
+                      ><i class="fas fa-user"></i> Advika Singhal</a
+                    >
+                  </div>
+                  <div class="right-buttons">
+                    <a href="LINKEDIN PROFILE" class="button" target="_blank"
+                      ><i class="fas fa-user"></i> Samriddhi Tiwari</a
+                    >
+                    <a href="LINKEDIN PROFILE" class="button" target="_blank"
+                      ><i class="fas fa-user"></i> Tanvi Bisht</a
+                    >
+                    <a
+                      href="https://www.linkedin.com/in/akansha-chaurasia-47235b260/"
+                      class="button"
+                      target="_blank"
+                      ><i class="fas fa-user"></i> Akansha Chaurasia</a
+                    >
+                  </div>
+                </div>
+                <p>
+                  You can connect with us through LinkedIn. We hope you enjoy
+                  using our website as much we enjoyed creating it!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- developers pop-up end  -->
 
+          <!-- contact pop-up start  ( Akansha chaurasia ) -->
+          <div class="contacts-popup" id="contacts-popup">
+            <div class="contacts-popup-things">
+              <span class="contacts_close" id="contacts-close-popup"
+                >&times;</span
+              >
+              <div class="contacts-container">
+                <div class="contacts-map-container">
+                  <!-- Embed your map iframe here -->
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8056942573885!2d77.2294329757856!3d28.665536075646727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683919c3b%3A0xf5fc331b74c2b9e2!2sIndira%20Gandhi%20Delhi%20Technical%20University%20for%20Women!5e0!3m2!1sen!2sin!4v1718804452113!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+                <div class="contacts-contact-form-container">
+                  <h1>Contact Us</h1>
+                  <!-- <form action="https://api.web3forms.com/submit" method="POST">
+
+              <input type="hidden" name="access_key" value="47c3ce45-249f-4c39-97e7-80972e46017d">
+
+              <input type="text" name="name" required>
+              <input type="email" name="email" required>
+              <textarea name="message" required></textarea>
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              <button type="submit">Submit Form</button>
+
+          </form> -->
+                  <form
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    class="contacts-contact-form"
+                  >
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="47c3ce45-249f-4c39-97e7-80972e46017d"
+                    />
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="Phone No"
+                      pattern="\d{10}"
+                      maxlength="10"
+                      required
+                    />
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Write your message"
+                      required
+                    ></textarea>
+                    <button type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- contact pop-up end  -->
+        </div>
+        <div class="footer-container-right">
+          <div class="footer-icons">
+            <span class="footer-content"> Visit: </span>
+            <a
+              class="footer-icons"
+              href="https://payalnarwal.github.io/AWS-Cloud-Club-IGDTUW-official-website/"
+              target="_blank"
+            >
+              <i class="fab fa-aws"></i>
+              Cloud Club IGDTUW
+            </a>
+          </div>
+          <div>
+            <p class="footer-content">
+              Copyright &copy; 2024, AWS CC IGDTUW.<br />
+              All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- <script src="typing.js"></script> -->
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/palette.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/info-keyboard.js"></script>
+  </body>
 </html>
